@@ -48,7 +48,7 @@ Every automated source is public and key-free, and nearly all of it is U.S. gove
 | Energy defaults | BLS average prices | Electricity $0.19 per kWh |
 | Recall Radar | CPSC recall database | 483 recalls in 300 days, at least 120 of them home products, 24 in the last 31 days |
 | Consumer alerts | FTC feeds | Pricing and rental-fee enforcement actions |
-| Videos | Public YouTube channel feeds | About 60 recent videos from 20 channels |
+| Videos | Public YouTube channel feeds | 59 recent videos from 21 channels |
 
 This avoids three problems at once: no licence fees, no scraping of competitors, and no invented deals or prices anywhere on the site.
 
