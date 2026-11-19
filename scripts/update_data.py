@@ -237,8 +237,8 @@ def update_rates() -> None:
 # 2. Price Pulse — BLS consumer price indexes for home categories
 # --------------------------------------------------------------------------
 CPI_SERIES = [
-    # key, FRED id (not seasonally adjusted, the basis for year-over-year comparisons), label
-    ("all", "CPIAUCNS", "All items (overall inflation)"),
+    # key, BLS series id (CPI-U, U.S. city average, not seasonally adjusted), label
+    ("all", "CUUR0000SA0", "All items (overall inflation)"),
     ("furnishings", "CUUR0000SAH3", "Household furnishings and operations"),
     ("furniture", "CUUR0000SEHJ", "Furniture and bedding"),
     ("appliances", "CUUR0000SEHK", "Appliances"),
@@ -251,6 +251,35 @@ CPI_SERIES = [
     ("energy", "CUUR0000SAH21", "Household energy"),
     ("electricity", "CUUR0000SEHF01", "Electricity"),
 ]
+# FRED carries only some of these; used when the BLS API is unreachable.
+FRED_CPI_FALLBACK = {"all": "CPIAUCNS", "furnishings": "CUUR0000SAH3", "energy": "CUUR0000SAH21",
+                     "electricity": "CUUR0000SEHF01"}
+
+
+def bls_series(ids: list[str], start_year: int, end_year: int) -> dict[str, list[list]]:
+    """One POST to the BLS public API v1 (no key). Returns {id: [[YYYY-MM-01, value], ...]} oldest first."""
+    body = json.dumps({"seriesid": ids, "startyear": str(start_year), "endyear": str(end_year)}).encode()
+    req = urllib.request.Request("https://api.bls.gov/publicAPI/v1/timeseries/data/", data=body, method="POST",
+                                 headers={"Content-Type": "application/json", "User-Agent": UA})
+    with urllib.request.urlopen(req, timeout=60) as resp:
+        payload = json.loads(resp.read().decode("utf-8", "replace"))
+    if payload.get("status") != "REQUEST_SUCCEEDED":
+        raise RuntimeError(f"BLS status {payload.get('status')}: {payload.get('message')}")
+    out = {}
+    for serie in payload.get("Results", {}).get("series", []):
+        rows = []
+        for item in serie.get("data", []):
+            period = item.get("period", "")
+            if not re.match(r"^M(0[1-9]|1[0-2])$", period):
+                continue  # skip annual and half-year averages
+            try:
+                rows.append([f"{item['year']}-{period[1:]}-01", float(item["value"])])
+            except (KeyError, ValueError):
+                continue  # "-" marks a month that was never published
+        rows.sort()
+        if rows:
+            out[serie.get("seriesID", "")] = rows
+    return out
 
 
 def series_metrics(obs: list[list]) -> dict:
@@ -274,23 +303,42 @@ def series_metrics(obs: list[list]) -> dict:
 
 
 def update_pulse() -> None:
-    start = (TODAY - dt.timedelta(days=365 * 5 + 40)).isoformat()
-    result, errors = {}, {}
-    for key, sid, label in CPI_SERIES:
-        try:
-            obs = fred_series(sid, start)
-            result[key] = {"id": sid, "label": label, **series_metrics(obs)}
-        except Exception as exc:  # noqa: BLE001
-            errors[sid] = str(exc)
-        time.sleep(0.6)
+    result, errors, via = {}, {}, "BLS public API"
+    try:
+        data = bls_series([sid for _, sid, _ in CPI_SERIES], TODAY.year - 4, TODAY.year)
+        for key, sid, label in CPI_SERIES:
+            if data.get(sid) and len(data[sid]) > 14:
+                result[key] = {"id": sid, "label": label, **series_metrics(data[sid])}
+            else:
+                errors[sid] = "not returned"
+    except Exception as exc:  # noqa: BLE001
+        errors["bls"] = str(exc)[:200]
+    if "all" not in result:
+        via = "FRED"
+        start = (TODAY - dt.timedelta(days=365 * 4 + 40)).isoformat()
+        for key, sid, label in CPI_SERIES:
+            fred_id = FRED_CPI_FALLBACK.get(key)
+            if not fred_id or key in result:
+                continue
+            try:
+                result[key] = {"id": sid, "label": label, **series_metrics(fred_series(fred_id, start))}
+            except Exception as exc:  # noqa: BLE001
+                errors[fred_id] = str(exc)[:160]
+            time.sleep(0.6)
     if "all" not in result or len(result) < 4:
         record("pulse", False, error=errors or "too few series")
         return
+    previous = (load("pulse.json", {}) or {}).get("series", {})
+    if len(result) < len(previous) and previous.get("all", {}).get("date") == result["all"]["date"]:
+        # a thinner answer for the same month: keep the fuller file we already have
+        record("pulse", True, kept_previous=True, series=len(previous), skipped=errors)
+        return
     save("pulse.json", {
-        "source": "U.S. Bureau of Labor Statistics, Consumer Price Index for All Urban Consumers (U.S. city average, not seasonally adjusted), retrieved from FRED",
+        "source": "U.S. Bureau of Labor Statistics, Consumer Price Index for All Urban Consumers (U.S. city average, not seasonally adjusted)",
+        "via": via,
         "series": result,
     })
-    record("pulse", True, series=len(result), latest=result["all"]["date"], skipped=errors)
+    record("pulse", True, via=via, series=len(result), latest=result["all"]["date"], skipped=errors)
 
 
 # --------------------------------------------------------------------------
@@ -557,10 +605,10 @@ FTC_FEEDS = [
     "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
 ]
 ALERT_BROAD = re.compile(
-    r"\b(home|house|housing|contractor|repair|roof|solar|utility|utilities|mortgage|rent|rental|renters?|landlord|"
-    r"moving|movers|warranty|appliance|furniture|mattress|foreclosure|real estate|homeowners?|hvac|energy|storm|"
-    r"disaster|flood|wildfire|hurricane|tornado|shopping|refunds?|delivery|package|holiday|black friday|gift cards?|"
-    r"subscriptions?|fake reviews?|prices?|scams?|impersonat)", re.I)
+    r"\b(home|house|housing|contractors?|home repair|roof|solar|utility|utilities|mortgage|rent|rental|renters?|"
+    r"landlord|moving|movers|warranty|appliances?|furniture|mattress|foreclosure|real estate|homeowners?|hvac|"
+    r"energy bill|storm|disaster|flood|wildfire|hurricane|tornado|online shopping|holiday shopping|black friday|"
+    r"cyber monday|fake reviews?|price|pricing|hidden fees?|junk fees?|sales? tax|rebates?)\b", re.I)
 ALERT_STRICT = re.compile(
     r"\b(homes?|housing|rent|rental|landlord|tenants?|mortgage|contractor|solar|appliances?|furniture|mattress|"
     r"warranty|moving|price transparency|advertised|shelf|overcharg|junk fees?|fake reviews?|retail|stores|"
@@ -595,7 +643,21 @@ def parse_date(text: str) -> str:
         except ValueError:
             continue
     m = re.search(r"(\d{4}-\d{2}-\d{2})", text)
-    return m.group(1) if m else ""
+    if m:
+        return m.group(1)
+    m = re.search(r"\b(\d{1,2})/(\d{1,2})/(\d{4})\b", text)  # e.g. "Thu, 11/12/2026 - 10:00"
+    if m:
+        try:
+            return dt.date(int(m.group(3)), int(m.group(1)), int(m.group(2))).isoformat()
+        except ValueError:
+            return ""
+    m = re.search(r"\b(\d{1,2}) (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]* (\d{4})\b", text)
+    if m:
+        try:
+            return dt.datetime.strptime(f"{m.group(1)} {m.group(2)} {m.group(3)}", "%d %b %Y").date().isoformat()
+        except ValueError:
+            return ""
+    return ""
 
 
 def update_alerts() -> None:
@@ -616,6 +678,9 @@ def update_alerts() -> None:
                     continue
                 if not press and not ALERT_BROAD.search(title + " " + clean(it.get("description") or it.get("summary"))):
                     continue
+                if not date:
+                    m = re.search(r"/(20\d{2})/(\d{2})/", link)
+                    date = f"{m.group(1)}-{m.group(2)}-01" if m else ""
                 items.append({"title": title[:170], "url": link, "date": date,
                               "kind": "enforcement" if press else "advice"})
         except Exception as exc:  # noqa: BLE001
