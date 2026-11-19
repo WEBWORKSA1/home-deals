@@ -1,4 +1,12 @@
 {
+ "AprilWilkerson": {
+  "id": "UC4v2tQ8GqP0RbmAzhp4IFkQ",
+  "name": "April Wilkerson"
+ },
+ "BobVila": {
+  "id": "UCZUSVqYgsIvleAl1NJOkpsQ",
+  "name": "Bob Vila"
+ },
  "EverydayHomeRepairs": {
   "id": "UCw1V3VC3xAzL66X4VwqaKlg",
   "name": "Everyday Home Repairs"
@@ -70,5 +78,9 @@
  "thisoldhouse": {
   "id": "UCUtWNBWbFL9We-cdXkiAuJA",
   "name": "This Old House"
+ },
+ "vancouvercarpenter": {
+  "id": "UCbZdXox6mKHdcT2QdVT-goQ",
+  "name": "Vancouver Carpenter"
  }
 }

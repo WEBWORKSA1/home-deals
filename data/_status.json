@@ -1,16 +1,14 @@
 {
  "failed": 0,
- "generated_at": "2026-11-19T09:00:44Z",
+ "generated_at": "2026-11-19T09:05:36Z",
  "ok": 7,
  "sources": {
   "alerts": {
    "feeds": {
     "https://consumer.ftc.gov/blog/gd-rss.xml": 10,
-    "https://consumer.ftc.gov/consumer-alerts/rss.xml": "error: HTTPError: HTTP Error 404: Not Found",
-    "https://consumer.ftc.gov/rss/consumer-alerts.xml": "error: HTTPError: HTTP Error 404: Not Found",
     "https://www.ftc.gov/feeds/press-release-consumer-protection.xml": 30
    },
-   "items": 24,
+   "items": 14,
    "ok": true
   },
   "energy": {
@@ -36,14 +34,14 @@
    "ok": true,
    "series": 4,
    "skipped": {
-    "CUSR0000SEHH": "HTTPError: HTTP Error 404: Not Found",
-    "CUSR0000SEHJ": "HTTPError: HTTP Error 404: Not Found",
-    "CUSR0000SEHK": "HTTPError: HTTP Error 404: Not Found",
-    "CUSR0000SEHK01": "HTTPError: HTTP Error 404: Not Found",
-    "CUSR0000SEHL": "HTTPError: HTTP Error 404: Not Found",
-    "CUSR0000SEHM": "HTTPError: HTTP Error 404: Not Found",
-    "CUSR0000SEHN": "HTTPError: HTTP Error 404: Not Found",
-    "CUSR0000SERA01": "HTTPError: HTTP Error 404: Not Found"
+    "CUUR0000SEHH": "HTTPError: HTTP Error 404: Not Found",
+    "CUUR0000SEHJ": "HTTPError: HTTP Error 404: Not Found",
+    "CUUR0000SEHK": "HTTPError: HTTP Error 404: Not Found",
+    "CUUR0000SEHK01": "HTTPError: HTTP Error 404: Not Found",
+    "CUUR0000SEHL": "HTTPError: HTTP Error 404: Not Found",
+    "CUUR0000SEHM": "HTTPError: HTTP Error 404: Not Found",
+    "CUUR0000SEHN": "HTTPError: HTTP Error 404: Not Found",
+    "CUUR0000SERA01": "HTTPError: HTTP Error 404: Not Found"
    }
   },
   "rates": {
@@ -59,19 +57,16 @@
    "via": "FRED"
   },
   "recalls": {
-   "home_related": 120,
+   "home_related": 90,
    "newest": "2026-11-12",
    "ok": true,
    "total_in_window": 483
   },
   "videos": {
-   "channels": 18,
-   "failures": {
-    "ENERGYSTAR": "HTTPError: HTTP Error 404: Not Found",
-    "UndecidedMF": "HTTPError: HTTP Error 404: Not Found"
-   },
+   "channels": 21,
+   "failures": {},
    "ok": true,
-   "videos": 65
+   "videos": 59
   }
  }
 }

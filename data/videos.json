@@ -17,14 +17,6 @@
    "topic": "projects"
   },
   {
-   "channel": "U.S. Consumer Product Safety Commission",
-   "handle": "USCPSC",
-   "id": "pT4-MX_9_Ck",
-   "published": "2026-11-18",
-   "title": "CPSC Commission Meeting | FY27 Operating Plan Briefing / Agenda and Priorities Hearing",
-   "topic": "safety"
-  },
-  {
    "channel": "This Old House",
    "handle": "thisoldhouse",
    "id": "XdkPqtbaTXI",
@@ -55,14 +47,6 @@
    "published": "2026-11-16",
    "title": "Build Science® 501 | Episode 4: Roof Overframe",
    "topic": "projects"
-  },
-  {
-   "channel": "This Old House",
-   "handle": "thisoldhouse",
-   "id": "R1zCmPlpg6w",
-   "published": "2026-11-15",
-   "title": "How to Choose and Plant a Tree | Ask This Old House",
-   "topic": "repairs"
   },
   {
    "channel": "Home Repair Tutor",
@@ -129,14 +113,6 @@
    "topic": "projects"
   },
   {
-   "channel": "Matt Risinger",
-   "handle": "buildshow",
-   "id": "zdD0caH5iZE",
-   "published": "2026-11-13",
-   "title": "The Surprising Advantage of Wood Over Steel",
-   "topic": "projects"
-  },
-  {
    "channel": "The Home Depot",
    "handle": "homedepot",
    "id": "Yc_HN9T5gcE",
@@ -193,6 +169,14 @@
    "topic": "repairs"
   },
   {
+   "channel": "Vancouver Carpenter",
+   "handle": "vancouvercarpenter",
+   "id": "0028Z9Lr5r4",
+   "published": "2026-11-08",
+   "title": "The Best Interior Design I've Seen in a While!",
+   "topic": "repairs"
+  },
+  {
    "channel": "Project Farm",
    "handle": "ProjectFarm",
    "id": "lsqKxKg3XIU",
@@ -215,14 +199,6 @@
    "published": "2026-11-07",
    "title": "Nobody Does This DECK BOARD TRICK! (Save Your Deck From Rot...)",
    "topic": "repairs"
-  },
-  {
-   "channel": "Essential Craftsman",
-   "handle": "essentialcraftsman",
-   "id": "0Gyndnl9sQQ",
-   "published": "2026-11-07",
-   "title": "I Just Bought The Weirdest Beams",
-   "topic": "projects"
   },
   {
    "channel": "Lowe's Home Improvement",
@@ -273,6 +249,14 @@
    "topic": "repairs"
   },
   {
+   "channel": "April Wilkerson",
+   "handle": "AprilWilkerson",
+   "id": "-Rmt4VgLpt0",
+   "published": "2026-11-01",
+   "title": "Steel You Bolt Together? Cold-Formed Steel Explained",
+   "topic": "projects"
+  },
+  {
    "channel": "Project Farm",
    "handle": "ProjectFarm",
    "id": "DiJEdoez__Q",
@@ -321,19 +305,19 @@
    "topic": "projects"
   },
   {
-   "channel": "Project Farm",
-   "handle": "ProjectFarm",
-   "id": "HQhq2SHko9I",
-   "published": "2026-10-25",
-   "title": "I’ll Never Use A Torch Again for Rusty Bolts!",
-   "topic": "buying"
-  },
-  {
    "channel": "LRN2DIY",
    "handle": "LRN2DIY",
    "id": "KhEtNDaNNio",
    "published": "2026-10-24",
    "title": "Your Drill Has 10 Features. Most People Use 3.",
+   "topic": "repairs"
+  },
+  {
+   "channel": "Vancouver Carpenter",
+   "handle": "vancouvercarpenter",
+   "id": "NYVWYR_3x38",
+   "published": "2026-10-24",
+   "title": "Why I Chose Construction Over YouTube",
    "topic": "repairs"
   },
   {
@@ -345,27 +329,11 @@
    "topic": "projects"
   },
   {
-   "channel": "Stud Pack",
-   "handle": "StudPack",
-   "id": "Q3wPXMXArE8",
-   "published": "2026-10-22",
-   "title": "This HVAC Boot Compromised the Structural Integrity of Our Home...(Seriously)",
-   "topic": "projects"
-  },
-  {
-   "channel": "U.S. Consumer Product Safety Commission",
-   "handle": "USCPSC",
-   "id": "f81vDLIMjVg",
-   "published": "2026-10-21",
-   "title": "CPSC Commission Hearing: NPR Safety Standard - Lithium-Ion Batteries Used in Micromobility Products",
-   "topic": "safety"
-  },
-  {
-   "channel": "The Honest Carpenter",
-   "handle": "TheHonestCarpenter",
-   "id": "3LKunyZRQR4",
+   "channel": "Vancouver Carpenter",
+   "handle": "vancouvercarpenter",
+   "id": "NcgO12kdTVs",
    "published": "2026-10-18",
-   "title": "The NEW Ultimate Carpentry Checklist...and it’s still FREE!",
+   "title": "A Day at My Current Job",
    "topic": "repairs"
   },
   {
@@ -393,20 +361,12 @@
    "topic": "repairs"
   },
   {
-   "channel": "Lowe's Home Improvement",
-   "handle": "Lowes",
-   "id": "xxpjxnz92H8",
-   "published": "2026-10-17",
-   "title": "How to Mount a TV | How To Anything",
+   "channel": "April Wilkerson",
+   "handle": "AprilWilkerson",
+   "id": "_Nkgnbed_wA",
+   "published": "2026-10-11",
+   "title": "Shop Built from a Kit - Finishing Up with Trim, Gutters & Roll-Up Doors",
    "topic": "projects"
-  },
-  {
-   "channel": "seejanedrill",
-   "handle": "seejanedrill",
-   "id": "qJwlIPrAvkc",
-   "published": "2026-10-10",
-   "title": "This Tool Sees Better Than Your Eyes",
-   "topic": "repairs"
   },
   {
    "channel": "The Home Depot",
@@ -415,14 +375,6 @@
    "published": "2026-10-05",
    "title": "John’s Story - The Home Depot Foundation | The Home Depot",
    "topic": "projects"
-  },
-  {
-   "channel": "LRN2DIY",
-   "handle": "LRN2DIY",
-   "id": "WbFkZqtW8sE",
-   "published": "2026-09-26",
-   "title": "Why Don't DIYers Use the SUPERIOR PEX A?",
-   "topic": "repairs"
   },
   {
    "channel": "Technology Connections",
@@ -449,20 +401,20 @@
    "topic": "repairs"
   },
   {
+   "channel": "April Wilkerson",
+   "handle": "AprilWilkerson",
+   "id": "Q-hOMKZHL1A",
+   "published": "2026-09-13",
+   "title": "Shop Built from a Kit - Siding Done in a Day",
+   "topic": "projects"
+  },
+  {
    "channel": "Everyday Home Repairs",
    "handle": "EverydayHomeRepairs",
    "id": "rQwngMDmb94",
    "published": "2026-08-26",
    "title": "Don't Set Your Shed on Blocks Until You See This",
    "topic": "repairs"
-  },
-  {
-   "channel": "Technology Connections",
-   "handle": "TechnologyConnections",
-   "id": "F_7B2shTPPU",
-   "published": "2026-08-21",
-   "title": "My water heater is cooler than yours",
-   "topic": "energy"
   },
   {
    "channel": "Fix This Build That",
@@ -473,12 +425,52 @@
    "topic": "projects"
   },
   {
-   "channel": "Fix This Build That",
-   "handle": "Fixthisbuildthat",
-   "id": "ActRTlyS82g",
-   "published": "2026-07-26",
-   "title": "Why Don’t People Do This Before Calling an HVAC Tech?",
-   "topic": "projects"
+   "channel": "Bob Vila",
+   "handle": "BobVila",
+   "id": "c82Nem8FyXg",
+   "published": "2024-07-16",
+   "title": "Habitat for Humanity: Project Begins",
+   "topic": "buying"
+  },
+  {
+   "channel": "Bob Vila",
+   "handle": "BobVila",
+   "id": "fx4BlvOuhYY",
+   "published": "2024-07-16",
+   "title": "Habitat for Humanity: Framing the Walls",
+   "topic": "buying"
+  },
+  {
+   "channel": "Bob Vila",
+   "handle": "BobVila",
+   "id": "56j9ih5wI0A",
+   "published": "2024-07-16",
+   "title": "Habitat for Humanity: Sheathing and Shingling the Roof",
+   "topic": "buying"
+  },
+  {
+   "channel": "The Family Handyman",
+   "handle": "familyhandyman",
+   "id": "5LG7QVCLgbI",
+   "published": "2017-02-14",
+   "title": "Kreg Mobile Tool Center",
+   "topic": "repairs"
+  },
+  {
+   "channel": "The Family Handyman",
+   "handle": "familyhandyman",
+   "id": "6C6A0vtgFSQ",
+   "published": "2017-02-14",
+   "title": "Ryobi Workbench Light",
+   "topic": "repairs"
+  },
+  {
+   "channel": "The Family Handyman",
+   "handle": "familyhandyman",
+   "id": "dM0kGil6Ilo",
+   "published": "2017-02-14",
+   "title": "Greenworks Battery-Powered Chain Saw",
+   "topic": "repairs"
   }
  ],
  "source": "Public YouTube channel feeds; videos play in the official YouTube player"

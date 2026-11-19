@@ -2,121 +2,85 @@
  "items": [
   {
    "date": "2026-11-12",
+   "kind": "enforcement",
    "title": "FTC and 17 States Secure $63 Million Settlement with Family Dollar Stores in Price Transparency Win for Consumers",
    "url": "https://www.ftc.gov/news-events/news/press-releases/2026/11/ftc-17-states-secure-63-million-settlement-family-dollar-stores-price-transparency-win-consumers"
   },
   {
-   "date": "2026-11-09",
-   "title": "FTC Secures Settlement with Stream Auto Outlet, Advancing Price Transparency for Auto-Buying Consumers",
-   "url": "https://www.ftc.gov/news-events/news/press-releases/2026/11/ftc-secures-settlement-stream-auto-outlet-advancing-price-transparency-auto-buying-consumers"
-  },
-  {
    "date": "2026-11-06",
-   "title": "Progress Residential and Owner Pretium Partners to Pay $49.75 Million to Settle FTC and States’ Charges Over Deceptive Rental Pricing Practices and Other Unlawf",
+   "kind": "enforcement",
+   "title": "Progress Residential and Owner Pretium Partners to Pay $49.75 Million to Settle FTC and States’ Charges Over Deceptive Rental Pricing Practices and Other Unlawful Conduct",
    "url": "https://www.ftc.gov/news-events/news/press-releases/2026/11/progress-residential-owner-pretium-partners-pay-4975-million-settle-ftc-states-charges-over"
   },
   {
-   "date": "2026-11-05",
-   "title": "New Details Emerge in Amazon Ads Auction-Rigging Case",
-   "url": "https://www.ftc.gov/news-events/news/press-releases/2026/11/new-details-emerge-amazon-ads-auction-rigging-case"
-  },
-  {
-   "date": "2026-10-29",
-   "title": "FTC Highlights Efforts to Combat Imposter Scams and Protect Consumers",
-   "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-highlights-efforts-combat-imposter-scams-protect-consumers"
-  },
-  {
-   "date": "2026-10-29",
-   "title": "FTC and States Take Action Against Toast Inc. over Hidden and Unauthorized Fees, Deceptive Subscription and Cancellation Practices and Other Unlawful Conduct",
-   "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-states-take-action-against-toast-inc-over-hidden-unauthorized-fees-deceptive-subscription"
-  },
-  {
-   "date": "2026-10-28",
-   "title": "FTC Launches Personalized Pricing and Compensation Inquiry",
-   "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-launches-personalized-pricing-compensation-inquiry"
-  },
-  {
    "date": "2026-10-26",
+   "kind": "enforcement",
    "title": "FTC and State Partners Sue Dollar General for Charging Consumers More than Advertised for Many Products",
    "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-state-partners-sue-dollar-general-charging-consumers-more-advertised-many-products"
   },
   {
    "date": "2026-10-22",
-   "title": "Court Permanently Shuts Down Illegal Debt Relief Operation Following FTC Allegation That Scheme’s Operators Impersonated Government and Business Entities",
-   "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/court-permanently-shuts-down-illegal-debt-relief-operation-following-ftc-allegation-schemes"
-  },
-  {
-   "date": "2026-10-22",
+   "kind": "enforcement",
    "title": "FTC Sues Perpetrators of Government Impersonation Scheme Over Deceptive Ads, Misleading Promises and Fake Reviews",
    "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-sues-perpetrators-government-impersonation-scheme-over-deceptive-ads-misleading-promises-fake"
   },
   {
-   "date": "2026-10-15",
-   "title": "FTC Sends More than $9.8 Million to Consumers Harmed by Walmart’s Failure to Stop Scammers that Used its Wire Transfer Services to Take Millions from Customers",
-   "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-sends-more-98-million-consumers-harmed-walmarts-failure-stop-scammers-used-its-wire-transfer"
-  },
-  {
-   "date": "2026-10-13",
-   "title": "FTC Sues Operator of Sextortion Relief Scheme for Misleading Consumers into Believing it Would Identify Criminals and End Sextortion Attacks",
-   "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-sues-operator-sextortion-relief-scheme-misleading-consumers-believing-it-would-identify"
-  },
-  {
-   "date": "2026-10-08",
-   "title": "FTC Returns More than $15.8 Million to Consumers Misled by Cash Advance App Company Cleo AI",
-   "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-returns-more-158-million-consumers-misled-cash-advance-app-company-cleo-ai"
-  },
-  {
-   "date": "2026-10-08",
-   "title": "FTC Secures Settlement with Auto Dealership Group in Price Transparency Win for Consumers",
-   "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-secures-settlement-auto-dealership-group-price-transparency-win-consumers"
-  },
-  {
    "date": "2026-10-06",
+   "kind": "enforcement",
    "title": "FTC Issues Redress Payments to Consumers Impacted by GOAT’s Deceptive Shipping, Refund Policies",
    "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-issues-redress-payments-consumers-impacted-goats-deceptive-shipping-refund-policies"
   },
   {
-   "date": "2026-10-05",
-   "title": "FTC Issues Letters Warning Hospitals Against Deceptive Pricing Practices",
-   "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-issues-letters-warning-hospitals-against-deceptive-pricing-practices"
-  },
-  {
-   "date": "2026-10-02",
-   "title": "FTC, States Sue Lens.com for Misrepresenting the Price of Contact Lenses in Search Ads and on Its Website",
-   "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-states-sue-lenscom-misrepresenting-price-contact-lenses-search-ads-its-website"
-  },
-  {
-   "date": "2026-09-24",
-   "title": "FTC Seeks Public Comment on Whether to Update Rule on Impersonation of Government and Businesses to Address Platforms’ Role in Promoting Impersonation Scams",
-   "url": "https://www.ftc.gov/news-events/news/press-releases/2026/09/ftc-seeks-public-comment-whether-update-rule-impersonation-government-businesses-address-platforms"
-  },
-  {
-   "date": "2026-09-17",
-   "title": "FTC Takes Historic Action Against Multilevel Marketing Operator Amway for Unfair and Deceptive Business Practices",
-   "url": "https://www.ftc.gov/news-events/news/press-releases/2026/09/ftc-takes-historic-action-against-multilevel-marketing-operator-amway-unfair-deceptive-business"
-  },
-  {
-   "date": "2026-09-17",
-   "title": "FTC Announces Additional Payments to Consumers Stemming from FTC’s Amazon Prime Settlement",
-   "url": "https://www.ftc.gov/news-events/news/press-releases/2026/09/ftc-announces-additional-payments-consumers-stemming-ftcs-amazon-prime-settlement"
-  },
-  {
-   "date": "2026-09-15",
-   "title": "FTC Publishes Price Transparency FAQs for Auto Dealers",
-   "url": "https://www.ftc.gov/news-events/news/press-releases/2026/09/ftc-publishes-price-transparency-faqs-auto-dealers"
+   "date": "",
+   "kind": "advice",
+   "title": "“Grandpa, I need your help!” How to spot and avoid grandkid scams",
+   "url": "https://consumer.ftc.gov/consumer-alerts/2026/11/grandpa-i-need-your-help-how-spot-and-avoid-grandkid-scams"
   },
   {
    "date": "",
+   "kind": "advice",
+   "title": "Three new tactics scammers use to go after VA benefits",
+   "url": "https://consumer.ftc.gov/consumer-alerts/2026/11/three-new-tactics-scammers-use-go-after-va-benefits"
+  },
+  {
+   "date": "",
+   "kind": "advice",
+   "title": "How to spot fake FTC websites and FTC impersonators",
+   "url": "https://consumer.ftc.gov/consumer-alerts/2026/11/how-spot-fake-ftc-websites-and-ftc-impersonators"
+  },
+  {
+   "date": "",
+   "kind": "advice",
    "title": "A Veterans Day reminder on how to spot scams on social media",
    "url": "https://consumer.ftc.gov/consumer-alerts/2026/11/veterans-day-reminder-how-spot-scams-social-media"
   },
   {
    "date": "",
+   "kind": "advice",
    "title": "FTC says Progress Residential charged renters hidden fees",
    "url": "https://consumer.ftc.gov/consumer-alerts/2026/11/ftc-says-progress-residential-charged-renters-hidden-fees"
   },
   {
    "date": "",
+   "kind": "advice",
+   "title": "Help veteran-owned small businesses avoid scams during National Veterans Small Business Week",
+   "url": "https://consumer.ftc.gov/consumer-alerts/2026/11/help-veteran-owned-small-businesses-avoid-scams-during-national-veterans-small-business-week"
+  },
+  {
+   "date": "",
+   "kind": "advice",
+   "title": "New report on the FTC’s work to protect older adults",
+   "url": "https://consumer.ftc.gov/consumer-alerts/2026/11/new-report-ftcs-work-protect-older-adults"
+  },
+  {
+   "date": "",
+   "kind": "advice",
+   "title": "Booking holiday travel? Hidden fees can cost you",
+   "url": "https://consumer.ftc.gov/consumer-alerts/2026/11/booking-holiday-travel-hidden-fees-can-cost-you"
+  },
+  {
+   "date": "",
+   "kind": "advice",
    "title": "Tell the FTC about imposter ads online",
    "url": "https://consumer.ftc.gov/consumer-alerts/2026/11/tell-ftc-about-imposter-ads-online"
   }
