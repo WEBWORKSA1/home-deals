@@ -237,19 +237,19 @@ def update_rates() -> None:
 # 2. Price Pulse — BLS consumer price indexes for home categories
 # --------------------------------------------------------------------------
 CPI_SERIES = [
-    # key, FRED id, label
-    ("all", "CPIAUCSL", "All items (overall inflation)"),
-    ("furnishings", "CUSR0000SAH3", "Household furnishings and operations"),
-    ("furniture", "CUSR0000SEHJ", "Furniture and bedding"),
-    ("appliances", "CUSR0000SEHK", "Appliances"),
-    ("major_appliances", "CUSR0000SEHK01", "Major appliances"),
-    ("tools", "CUSR0000SEHM", "Tools, hardware, outdoor equipment and supplies"),
-    ("linens", "CUSR0000SEHH", "Window and floor coverings and other linens"),
-    ("decor", "CUSR0000SEHL", "Other household equipment and furnishings"),
-    ("housekeeping", "CUSR0000SEHN", "Housekeeping supplies"),
-    ("tvs", "CUSR0000SERA01", "Televisions"),
-    ("energy", "CUSR0000SAH21", "Household energy"),
-    ("electricity", "CUSR0000SEHF01", "Electricity"),
+    # key, FRED id (not seasonally adjusted, the basis for year-over-year comparisons), label
+    ("all", "CPIAUCNS", "All items (overall inflation)"),
+    ("furnishings", "CUUR0000SAH3", "Household furnishings and operations"),
+    ("furniture", "CUUR0000SEHJ", "Furniture and bedding"),
+    ("appliances", "CUUR0000SEHK", "Appliances"),
+    ("major_appliances", "CUUR0000SEHK01", "Major appliances"),
+    ("tools", "CUUR0000SEHM", "Tools, hardware, outdoor equipment and supplies"),
+    ("linens", "CUUR0000SEHH", "Window and floor coverings and other linens"),
+    ("decor", "CUUR0000SEHL", "Other household equipment and furnishings"),
+    ("housekeeping", "CUUR0000SEHN", "Housekeeping supplies"),
+    ("tvs", "CUUR0000SERA01", "Televisions"),
+    ("energy", "CUUR0000SAH21", "Household energy"),
+    ("electricity", "CUUR0000SEHF01", "Electricity"),
 ]
 
 
@@ -261,13 +261,14 @@ def series_metrics(obs: list[list]) -> dict:
     if base:
         out["yoy"] = pct(last, base[0])
         out["yoy_approx"] = bool(base[1])
-    b3 = value_near(obs, months_back(d, 3), 45)
-    if b3:
-        span = max(1, round((d - dt.date.fromisoformat(b3[1])).days / 30.4))
-        out["trend_3m_annualized"] = round(((last / b3[0]) ** (12 / span) - 1) * 100, 2)
-    b1 = value_near(obs, months_back(d, 1), 20)
-    if b1:
-        out["mom"] = pct(last, b1[0])
+    # the same comparison three published months earlier shows which way prices are heading
+    if len(obs) > 3:
+        d3_date, d3_val = obs[-4]
+        base3 = year_ago_value(obs, dt.date.fromisoformat(d3_date))
+        if base3:
+            out["yoy_3m_ago"] = pct(d3_val, base3[0])
+            if "yoy" in out:
+                out["momentum"] = round(out["yoy"] - out["yoy_3m_ago"], 2)
     out["spark"] = [[x[0][:7], round(x[1], 2)] for x in obs[-37:]]
     return out
 
@@ -286,7 +287,7 @@ def update_pulse() -> None:
         record("pulse", False, error=errors or "too few series")
         return
     save("pulse.json", {
-        "source": "U.S. Bureau of Labor Statistics, Consumer Price Index for All Urban Consumers (seasonally adjusted), retrieved from FRED",
+        "source": "U.S. Bureau of Labor Statistics, Consumer Price Index for All Urban Consumers (U.S. city average, not seasonally adjusted), retrieved from FRED",
         "series": result,
     })
     record("pulse", True, series=len(result), latest=result["all"]["date"], skipped=errors)
@@ -369,7 +370,7 @@ RECALL_RULES = [
     ("decor-lighting", r"\b(lamps?|lights?|lighting|lanterns?|candles?|chandeliers?|sconces?|mirrors?|rugs?|curtains?|blinds|window coverings?|shades|roman shades|wall art|bulbs?|led strips?|night ?lights?|christmas trees?|holiday decorations?|wax warmers?|diffusers?)\b"),
 ]
 RECALL_EXCLUDE = re.compile(
-    r"\b(e-?bikes?|bicycles?|scooters?|hoverboards?|helmets?|atvs?|utvs?|off-road|motorcycles?|pajamas?|sleepwear|"
+    r"\b(sterilizers?|bottle warmers?|e-?bikes?|bicycles?|scooters?|hoverboards?|helmets?|atvs?|utvs?|off-road|motorcycles?|pajamas?|sleepwear|"
     r"hoodies?|jackets?|clothing|garments?|necklaces?|jewelry|toys?|dolls?|rattles?|teethers?|pacifiers?|strollers?|"
     r"car seats?|magnets?|firearms?|rifles?|crossbows?|golf carts?|snowmobiles?|kayaks?|life jackets?|skis?|"
     r"climbing|backpacks?|vapes?|medication|supplements?|minoxidil|pills?|treadmills?|exercise|dumbbells?)\b", re.I)
@@ -437,15 +438,15 @@ def update_recalls() -> None:
             "date": date,
             "title": title,
             "cat": slug,
-            "hazard": clean("; ".join(names(rec.get("Hazards"))), 260),
-            "remedy": clean("; ".join(names(rec.get("Remedies"))), 220),
+            "hazard": clean("; ".join(names(rec.get("Hazards"))), 210),
+            "remedy": clean("; ".join(names(rec.get("Remedies"))), 190),
             "remedy_type": names(rec.get("RemedyOptions"), "Option")[:3],
             "units": clean(units, 60),
-            "sold_at": clean("; ".join(names(rec.get("Retailers"))), 200),
+            "sold_at": clean((names(rec.get("Retailers")) or [""])[0], 120),
             "url": link.replace("http://", "https://"),
         })
     out.sort(key=lambda r: (r["date"], r["id"] or 0), reverse=True)
-    out = out[:120]
+    out = out[:90]
     if not out:
         record("recalls", False, error=f"0 home recalls matched out of {seen_all}")
         return
@@ -461,7 +462,7 @@ def update_recalls() -> None:
 # 5. Video hub — public YouTube channel feeds
 # --------------------------------------------------------------------------
 CHANNELS = [
-    # handle, topic
+    # handle, topic. A handle that stops resolving is skipped and reported, never fatal.
     ("thisoldhouse", "repairs"),
     ("HomeRenoVisionDIY", "repairs"),
     ("familyhandyman", "repairs"),
@@ -470,19 +471,20 @@ CHANNELS = [
     ("HomeRepairTutor", "repairs"),
     ("TheHonestCarpenter", "repairs"),
     ("LRN2DIY", "repairs"),
+    ("vancouvercarpenter", "repairs"),
     ("StudPack", "projects"),
     ("essentialcraftsman", "projects"),
     ("Fixthisbuildthat", "projects"),
     ("buildshow", "projects"),
-    ("ProjectFarm", "buying"),
-    ("consumerreports", "buying"),
-    ("TechnologyConnections", "energy"),
-    ("UndecidedMF", "energy"),
-    ("ENERGYSTAR", "energy"),
+    ("AprilWilkerson", "projects"),
     ("Lowes", "projects"),
     ("homedepot", "projects"),
-    ("USCPSC", "safety"),
+    ("ProjectFarm", "buying"),
+    ("consumerreports", "buying"),
+    ("BobVila", "buying"),
+    ("TechnologyConnections", "energy"),
 ]
+SKIP_TITLE = re.compile(r"(#shorts?\b|commission meeting|livestream|live stream|\blive\b:|trailer|giveaway)", re.I)
 YT_HEADERS = {"Cookie": "CONSENT=YES+cb; SOCS=CAI"}
 CHANNEL_ID_PATTERNS = [
     r'"externalId":"(UC[0-9A-Za-z_-]{22})"',
@@ -527,12 +529,12 @@ def update_videos() -> None:
                 href = link.get("href", "") if link is not None else ""
                 if not re.match(r"^[0-9A-Za-z_-]{11}$", vid) or not title:
                     continue
-                if "/shorts/" in href or re.search(r"#shorts?\b", title, re.I):
+                if "/shorts/" in href or SKIP_TITLE.search(title):
                     continue
                 videos.append({"id": vid, "title": title[:140], "channel": name, "handle": handle,
                                "topic": topic, "published": published})
                 kept += 1
-                if kept >= 4:
+                if kept >= 3:
                     break
             time.sleep(0.5)
         except Exception as exc:  # noqa: BLE001
@@ -552,15 +554,18 @@ def update_videos() -> None:
 # --------------------------------------------------------------------------
 FTC_FEEDS = [
     "https://consumer.ftc.gov/blog/gd-rss.xml",
-    "https://consumer.ftc.gov/consumer-alerts/rss.xml",
-    "https://consumer.ftc.gov/rss/consumer-alerts.xml",
     "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
 ]
-ALERT_WORDS = re.compile(
-    r"\b(home|house|contractor|repair|roof|solar|utility|utilities|mortgage|rent|renter|landlord|moving|movers|"
-    r"warranty|appliance|furniture|mattress|foreclosure|real estate|homeowner|hvac|energy|storm|disaster|flood|"
-    r"wildfire|hurricane|tornado|shopping|refund|delivery|package|online shopping|black friday|holiday shopping|"
-    r"subscription|fake review|price)\b", re.I)
+ALERT_BROAD = re.compile(
+    r"\b(home|house|housing|contractor|repair|roof|solar|utility|utilities|mortgage|rent|rental|renters?|landlord|"
+    r"moving|movers|warranty|appliance|furniture|mattress|foreclosure|real estate|homeowners?|hvac|energy|storm|"
+    r"disaster|flood|wildfire|hurricane|tornado|shopping|refunds?|delivery|package|holiday|black friday|gift cards?|"
+    r"subscriptions?|fake reviews?|prices?|scams?|impersonat)", re.I)
+ALERT_STRICT = re.compile(
+    r"\b(homes?|housing|rent|rental|landlord|tenants?|mortgage|contractor|solar|appliances?|furniture|mattress|"
+    r"warranty|moving|price transparency|advertised|shelf|overcharg|junk fees?|fake reviews?|retail|stores|"
+    r"shopping|refunds?|made in usa)\b", re.I)
+ALERT_SKIP = re.compile(r"\b(auto|car|vehicle|dealership|crypto|health|medical|telehealth|ads auction|merger|acquisition|workshop|commissioner|testif)", re.I)
 
 
 def parse_feed(raw: bytes) -> list[dict]:
@@ -604,9 +609,15 @@ def update_alerts() -> None:
                 date = parse_date(it.get("pubDate") or it.get("published") or it.get("updated") or it.get("date") or "")
                 if not title or not link.startswith("http") or "ftc.gov" not in link:
                     continue
-                if not ALERT_WORDS.search(title + " " + clean(it.get("description") or it.get("summary"))):
+                press = "press-release" in url
+                if ALERT_SKIP.search(title):
                     continue
-                items.append({"title": title[:160], "url": link, "date": date})
+                if press and not ALERT_STRICT.search(title):
+                    continue
+                if not press and not ALERT_BROAD.search(title + " " + clean(it.get("description") or it.get("summary"))):
+                    continue
+                items.append({"title": title[:170], "url": link, "date": date,
+                              "kind": "enforcement" if press else "advice"})
         except Exception as exc:  # noqa: BLE001
             tried[url] = f"error: {str(exc)[:120]}"
     seen, unique = set(), []
