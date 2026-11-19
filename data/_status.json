@@ -1,0 +1,77 @@
+{
+ "failed": 0,
+ "generated_at": "2026-11-19T09:00:44Z",
+ "ok": 7,
+ "sources": {
+  "alerts": {
+   "feeds": {
+    "https://consumer.ftc.gov/blog/gd-rss.xml": 10,
+    "https://consumer.ftc.gov/consumer-alerts/rss.xml": "error: HTTPError: HTTP Error 404: Not Found",
+    "https://consumer.ftc.gov/rss/consumer-alerts.xml": "error: HTTPError: HTTP Error 404: Not Found",
+    "https://www.ftc.gov/feeds/press-release-consumer-protection.xml": 30
+   },
+   "items": 24,
+   "ok": true
+  },
+  "energy": {
+   "ok": true,
+   "series": [
+    "electricity_kwh",
+    "gas_therm"
+   ],
+   "skipped": {}
+  },
+  "market": {
+   "ok": true,
+   "series": [
+    "months_supply",
+    "hpi",
+    "median_price",
+    "new_home_sales"
+   ],
+   "skipped": {}
+  },
+  "pulse": {
+   "latest": "2026-10-01",
+   "ok": true,
+   "series": 4,
+   "skipped": {
+    "CUSR0000SEHH": "HTTPError: HTTP Error 404: Not Found",
+    "CUSR0000SEHJ": "HTTPError: HTTP Error 404: Not Found",
+    "CUSR0000SEHK": "HTTPError: HTTP Error 404: Not Found",
+    "CUSR0000SEHK01": "HTTPError: HTTP Error 404: Not Found",
+    "CUSR0000SEHL": "HTTPError: HTTP Error 404: Not Found",
+    "CUSR0000SEHM": "HTTPError: HTTP Error 404: Not Found",
+    "CUSR0000SEHN": "HTTPError: HTTP Error 404: Not Found",
+    "CUSR0000SERA01": "HTTPError: HTTP Error 404: Not Found"
+   }
+  },
+  "rates": {
+   "latest": {
+    "date": "2026-11-12",
+    "high_52w": 7.4,
+    "low_52w": 5.98,
+    "rate": 7.11,
+    "week_change": -0.07,
+    "year_ago": 6.24
+   },
+   "ok": true,
+   "via": "FRED"
+  },
+  "recalls": {
+   "home_related": 120,
+   "newest": "2026-11-12",
+   "ok": true,
+   "total_in_window": 483
+  },
+  "videos": {
+   "channels": 18,
+   "failures": {
+    "ENERGYSTAR": "HTTPError: HTTP Error 404: Not Found",
+    "UndecidedMF": "HTTPError: HTTP Error 404: Not Found"
+   },
+   "ok": true,
+   "videos": 65
+  }
+ }
+}

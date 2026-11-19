@@ -1,0 +1,74 @@
+{
+ "EverydayHomeRepairs": {
+  "id": "UCw1V3VC3xAzL66X4VwqaKlg",
+  "name": "Everyday Home Repairs"
+ },
+ "Fixthisbuildthat": {
+  "id": "UCHYSw4XKO_q1GaChw5pxa-w",
+  "name": "Fix This Build That"
+ },
+ "HomeRenoVisionDIY": {
+  "id": "UCnorhjQR4zJkT7AVNhu395Q",
+  "name": "Home RenoVision DIY"
+ },
+ "HomeRepairTutor": {
+  "id": "UCP2vaEZS8MvZrFklwBtW1GA",
+  "name": "Home Repair Tutor"
+ },
+ "LRN2DIY": {
+  "id": "UCPKAKrjoMz7POptCloy7AIQ",
+  "name": "LRN2DIY"
+ },
+ "Lowes": {
+  "id": "UCqd2hbtE2N9fb0D2nTrLT1w",
+  "name": "Lowe's Home Improvement"
+ },
+ "ProjectFarm": {
+  "id": "UC2rzsm1Qi6N1X-wuOg_p0Ng",
+  "name": "Project Farm"
+ },
+ "StudPack": {
+  "id": "UCjG94SagJZoyPggcBhUdFCA",
+  "name": "Stud Pack"
+ },
+ "TechnologyConnections": {
+  "id": "UCy0tKL1T7wFoYcxCe0xjN6Q",
+  "name": "Technology Connections"
+ },
+ "TheHonestCarpenter": {
+  "id": "UCDLxnaDQzo8YolFqsBAHVLQ",
+  "name": "The Honest Carpenter"
+ },
+ "USCPSC": {
+  "id": "UCeoiFCC2wVc0f8dScwtvsgw",
+  "name": "U.S. Consumer Product Safety Commission"
+ },
+ "buildshow": {
+  "id": "UCFCTrfb1JUJjs3Im8OZDtBw",
+  "name": "Matt Risinger"
+ },
+ "consumerreports": {
+  "id": "UCOClvgLYa7g75eIaTdwj_vg",
+  "name": "Consumer Reports"
+ },
+ "essentialcraftsman": {
+  "id": "UCzr30osBdTmuFUS8IfXtXmg",
+  "name": "Essential Craftsman"
+ },
+ "familyhandyman": {
+  "id": "UCglYLnUNp4OAqw5HMEL9pgg",
+  "name": "The Family Handyman"
+ },
+ "homedepot": {
+  "id": "UCfB9yx0y0dUwQ0lpjH8R4gA",
+  "name": "The Home Depot"
+ },
+ "seejanedrill": {
+  "id": "UCraGaDLfWec67xl9FEPndtw",
+  "name": "seejanedrill"
+ },
+ "thisoldhouse": {
+  "id": "UCUtWNBWbFL9We-cdXkiAuJA",
+  "name": "This Old House"
+ }
+}

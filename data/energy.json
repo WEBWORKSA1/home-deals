@@ -1,0 +1,19 @@
+{
+ "series": {
+  "electricity_kwh": {
+   "date": "2026-10-01",
+   "id": "APU000072610",
+   "label": "Average price of electricity per kWh, U.S. city average (BLS)",
+   "value": 0.19,
+   "yoy": 1.06
+  },
+  "gas_therm": {
+   "date": "2026-10-01",
+   "id": "APU000072620",
+   "label": "Average price of utility (piped) gas per therm, U.S. city average (BLS)",
+   "value": 1.691,
+   "yoy": 4.84
+  }
+ },
+ "source": "U.S. Bureau of Labor Statistics average price data, retrieved from FRED"
+}
