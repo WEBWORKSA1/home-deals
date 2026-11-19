@@ -1,0 +1,62 @@
+name: Refresh data and rebuild site
+
+# Keeps Home.Deals self-updating: pulls fresh public data four times a day,
+# rebuilds the static pages and commits only when something actually changed.
+# GitHub Pages (deploy from branch: main / root) then republishes on its own.
+
+on:
+  schedule:
+    - cron: "23 5,11,17,23 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - "content/**"
+      - ".github/workflows/refresh.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-site
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Refresh data
+        run: python3 scripts/update_data.py
+
+      - name: Rebuild pages
+        run: |
+          if [ -f scripts/build.py ]; then python3 scripts/build.py; fi
+
+      - name: Commit and push if content changed
+        run: |
+          git config user.name "home-deals-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          publish() {
+            git add -A
+            if git diff --cached --quiet -- . ':(exclude)data/_status.json'; then
+              echo "No content changes."
+              return 0
+            fi
+            git commit -q -m "chore(data): automatic refresh $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push origin HEAD:main
+          }
+          if ! publish; then
+            echo "Push was rejected (main moved). Rebuilding on top of the latest main."
+            git fetch origin main
+            git reset --hard origin/main
+            python3 scripts/update_data.py
+            if [ -f scripts/build.py ]; then python3 scripts/build.py; fi
+            publish
+          fi
