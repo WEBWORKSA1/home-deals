@@ -496,6 +496,7 @@ def update_recalls() -> None:
             "url": link.replace("http://", "https://"),
         })
     out.sort(key=lambda r: (r["date"], r["id"] or 0), reverse=True)
+    matched = len(out)
     out = out[:90]
     if not out:
         record("recalls", False, error=f"0 home recalls matched out of {seen_all}")
@@ -505,7 +506,7 @@ def update_recalls() -> None:
         "window_start": start,
         "items": out,
     })
-    record("recalls", True, total_in_window=seen_all, home_related=len(out), newest=out[0]["date"])
+    record("recalls", True, total_in_window=seen_all, home_related=matched, kept=len(out), newest=out[0]["date"])
 
 
 # --------------------------------------------------------------------------

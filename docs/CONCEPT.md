@@ -46,7 +46,7 @@ Every automated source is public and key-free, and nearly all of it is U.S. gove
 | Mortgage rates | Freddie Mac weekly survey via FRED | 30-year 7.11%, 15-year 6.45% (week of 12 November 2026) |
 | Housing meter | Census and HUD new-home supply, FHFA price index, rate position | 50 out of 100, balanced |
 | Energy defaults | BLS average prices | Electricity $0.19 per kWh |
-| Recall Radar | CPSC recall database | 120 home-product recalls in 300 days, 24 in the last 31 days |
+| Recall Radar | CPSC recall database | 483 recalls in 300 days, at least 120 of them home products, 24 in the last 31 days |
 | Consumer alerts | FTC feeds | Pricing and rental-fee enforcement actions |
 | Videos | Public YouTube channel feeds | About 60 recent videos from 20 channels |
 

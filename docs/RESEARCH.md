@@ -90,5 +90,5 @@ These refused to load or returned no usable content: CouponCabin, RedFlagDeals, 
 - Federal home energy tax credits (sections 25C and 25D) ended for work after 31 December 2025, per the IRS.
 - The 30-year fixed mortgage average was 7.11% for the week of 12 November 2026 (Freddie Mac via FRED), read by the site's own pipeline.
 - Consumer Price Index, October 2026 (BLS): all items about +4.0% over the year, furniture and bedding about −1.3%, major appliances about −1.2%. The October 2025 index was never published, so the base month is estimated.
-- 483 recalls were announced in the 300 days to 19 November 2026, of which the pipeline classified 120 as home products.
+- 483 recalls were announced in the 300 days to 19 November 2026. The pipeline classified at least 120 of them as home products (120 was its display cap on that run), including 24 announced in the last 31 days.
 - Trademark search results showed "HOME DEALS" (U.S. registration 2967344) as cancelled in 2016 and "HOMEDEALS" (serial 86839220) as dead. This is not a legal clearance.
