@@ -144,7 +144,7 @@ def alerts_band(topic: str = "") -> str:
             '<div><h2>Get told when a buy window opens</h2>'
             '<p>One short email when a category you care about moves into its strongest sale period, or when mortgage rates shift. '
             'No daily blasts. Stop any time.</p></div>'
-            + form("alerts", "Deal alert sign-up", fields, "Send me deal alerts", "You are on the list. Watch for a confirmation from us.",
+            + form("alerts", "Deal alert sign-up", fields, "Send me deal alerts", "You are on the list. We will email you only when the timing is right.",
                    cls="form-inline")
             + '</div></section>')
 
@@ -727,8 +727,11 @@ def build_market() -> None:
         ser = MSER.get(key)
         if not ser:
             continue
+        period = fdate(ser["date"], "month")
+        if key == "median_price":  # a quarterly series: show the quarter, not its first month
+            period = f'Q{(int(ser["date"][5:7]) - 1) // 3 + 1} {ser["date"][:4]}'
         stats.append(f'<tr><th scope="row">{name}</th><td class="num">{fmt(ser["value"])}</td><td class="num">{signed(ser["yoy"]) if ser.get("yoy") is not None else "—"}</td>'
-                     f'<td>{fdate(ser["date"], "month")}</td><td class="spark-cell">{spark([v for _, v in ser["spark"]], 110, 30)}</td></tr>')
+                     f'<td>{period}</td><td class="spark-cell">{spark([v for _, v in ser["spark"]], 110, 30)}</td></tr>')
     faq_html, faq_schema = faq_block([
         ("What does the meter measure?", "National conditions for buyers, from 0 to 100. It combines the supply of new homes, the pace of house price growth and where mortgage rates sit in their 52-week range."),
         ("Does a high score mean I should buy?", "No. It says national conditions lean towards buyers. Your decision depends on your local market, your finances and how long you plan to stay."),
@@ -921,7 +924,7 @@ def build_community() -> None:
         body, h1="Giveaways", lede="Free prize rounds for readers. Each round is announced here with its prize and rules before entries open.",
         crumbs=[("Giveaways", None)], section="Community")
 
-    uses = "".join(f'<li><h3>{E(t)}</h3><p>{E(d)}</p></li>' for t, d in SUPPORT_USES)
+    uses = "".join(f'<li class="row"><div class="row-main"><h3>{E(t)}</h3><p>{E(d)}</p></div></li>' for t, d in SUPPORT_USES)
     links = {k: v for k, v in SITE["donate"].items() if v}
     names = {"paypal": "Support with PayPal", "stripe": "Support by card", "kofi": "Support on Ko-fi", "buymeacoffee": "Buy us a coffee"}
     if links:
@@ -935,7 +938,7 @@ def build_community() -> None:
                 + form("support", "Support pledge", fields, "Send my pledge", "Thank you. We will reply with a secure payment link."))
     body = f'''<section class="sec"><div class="wrap split">
 <div><h2>Give what the site is worth to you</h2><div class="tool-box">{give}</div>
-<h2>Where support goes</h2><ol class="numbered plainlist">{uses}</ol></div>
+<h2>Where support goes</h2><ul class="rows">{uses}</ul></div>
 <aside class="side"><div class="panel"><h3>Other ways to help</h3><ul class="links"><li><a href="{{{{root}}}}submit/">Submit a deal you have checked</a></li><li><a href="{{{{root}}}}careers/">Contribute your skills</a></li><li><a href="{{{{root}}}}advertise/">Sponsor a section</a></li></ul>
 <p>Sharing the calendar with someone about to buy a mattress or a refrigerator helps too.</p></div>
 <div class="panel"><h3>Plain facts</h3><p>Home.Deals is not a charity, and contributions are not tax-deductible. Supporters do not receive anything that affects what we publish. We never ask anyone to click on advertising.</p></div></aside>
@@ -975,7 +978,7 @@ def build_community() -> None:
     fields = (f'<div class="grid-2">{field("email", "Email address", "email", True, attrs="autocomplete=email")}{field("zip", "ZIP code", "text", False, attrs="inputmode=numeric maxlength=5", help_="For regional sales and rebates")}</div>'
               f'<fieldset class="q"><legend class="q-label">What should we watch for you?</legend><div class="tiles tiles-3">{cats}</div></fieldset>')
     body = f'''<section class="sec"><div class="wrap split">
-<div><div class="tool-box">{form("alerts", "Deal alert sign-up", fields, "Send me deal alerts", "You are on the list. Watch for a confirmation from us.")}</div></div>
+<div><div class="tool-box">{form("alerts", "Deal alert sign-up", fields, "Send me deal alerts", "You are on the list. We will email you only when the timing is right.")}</div></div>
 <aside class="side"><div class="panel"><h3>What you get</h3><ul class="ticks"><li>A short note when a category you picked enters a buy window</li><li>A heads-up before the big sale weekends</li><li>Rate moves, if you ask for them</li></ul></div>
 <div class="panel"><h3>What you do not get</h3><ul class="crosses"><li>Daily emails</li><li>Your address passed to anyone else</li></ul></div></aside>
 </div></section>'''
@@ -1191,6 +1194,8 @@ def render(p: dict, css_v: str, js_v: dict) -> str:
 </body>
 </html>
 '''
+    # bare tables inside prose get a scroll wrapper so they never widen a phone screen
+    doc = re.sub(r"<table>(.*?)</table>", r'<div class="table-wrap"><table>\1</table></div>', doc, flags=re.S)
     doc = doc.replace("{{root}}", R if R else "./")
     for key, value in TOKENS.items():
         doc = doc.replace("{{" + key + "}}", value)
