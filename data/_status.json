@@ -1,6 +1,6 @@
 {
  "failed": 0,
- "generated_at": "2026-11-19T09:05:36Z",
+ "generated_at": "2026-11-19T09:08:25Z",
  "ok": 7,
  "sources": {
   "alerts": {
@@ -8,7 +8,7 @@
     "https://consumer.ftc.gov/blog/gd-rss.xml": 10,
     "https://www.ftc.gov/feeds/press-release-consumer-protection.xml": 30
    },
-   "items": 14,
+   "items": 8,
    "ok": true
   },
   "energy": {
@@ -32,17 +32,9 @@
   "pulse": {
    "latest": "2026-10-01",
    "ok": true,
-   "series": 4,
-   "skipped": {
-    "CUUR0000SEHH": "HTTPError: HTTP Error 404: Not Found",
-    "CUUR0000SEHJ": "HTTPError: HTTP Error 404: Not Found",
-    "CUUR0000SEHK": "HTTPError: HTTP Error 404: Not Found",
-    "CUUR0000SEHK01": "HTTPError: HTTP Error 404: Not Found",
-    "CUUR0000SEHL": "HTTPError: HTTP Error 404: Not Found",
-    "CUUR0000SEHM": "HTTPError: HTTP Error 404: Not Found",
-    "CUUR0000SEHN": "HTTPError: HTTP Error 404: Not Found",
-    "CUUR0000SERA01": "HTTPError: HTTP Error 404: Not Found"
-   }
+   "series": 12,
+   "skipped": {},
+   "via": "BLS public API"
   },
   "rates": {
    "latest": {
