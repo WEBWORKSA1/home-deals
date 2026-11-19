@@ -1,6 +1,14 @@
 {
  "items": [
   {
+   "channel": "Technology Connections",
+   "handle": "TechnologyConnections",
+   "id": "FcbwVXk83U8",
+   "published": "2026-11-19",
+   "title": "It's a Fiber Optic Christmas (or... was)",
+   "topic": "energy"
+  },
+  {
    "channel": "This Old House",
    "handle": "thisoldhouse",
    "id": "bAvnXQW-xdM",
@@ -241,14 +249,6 @@
    "topic": "repairs"
   },
   {
-   "channel": "Home Repair Tutor",
-   "handle": "HomeRepairTutor",
-   "id": "hbZu90357F0",
-   "published": "2026-11-01",
-   "title": "Bathroom Sink Shutoff Valve Mistakes to Avoid",
-   "topic": "repairs"
-  },
-  {
    "channel": "April Wilkerson",
    "handle": "AprilWilkerson",
    "id": "-Rmt4VgLpt0",
@@ -375,14 +375,6 @@
    "published": "2026-10-05",
    "title": "John’s Story - The Home Depot Foundation | The Home Depot",
    "topic": "projects"
-  },
-  {
-   "channel": "Technology Connections",
-   "handle": "TechnologyConnections",
-   "id": "0KoeY54M5VA",
-   "published": "2026-09-24",
-   "title": "Engines haven't been fully mechanical in decades - and that's good!",
-   "topic": "energy"
   },
   {
    "channel": "Fix This Build That",

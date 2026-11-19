@@ -1,6 +1,36 @@
 {
  "items": [
   {
+   "cat": "mattresses",
+   "date": "2026-11-19",
+   "hazard": "The recalled bed rails violate the mandatory standard for adult portable bed rails because users can become entrapped within the bed rail or between the bed rail and the side of the mattress, posing a serious…",
+   "id": 11069,
+   "number": "27099",
+   "remedy": "Consumers should stop using the recalled adult portable bed rails immediately and contact Xentrawave for a full refund. Consumers will be asked to cut the foam padding on the bed rail…",
+   "remedy_type": [
+    "Refund"
+   ],
+   "sold_at": "Sold Online At: Xentrawave at Amazon.com",
+   "title": "Xentrawave Recalls Adult Portable Bed Rails Due to Risk of Serious Injury or Death from Entrapment and Asphyxiation; Violate Mandatory Standard for Adult Portable Bed Rails; One Death Reported",
+   "units": "About 2,114",
+   "url": "https://cpsc.gov/Recalls/2027/Xentrawave-Recalls-Adult-Portable-Bed-Rails-Due-to-Risk-of-Serious-Injury-or-Death-from-Entrapment-and-Asphyxiation-Violate-Mandatory-Standard-for-Adult-Portable-Bed-Rails-One-Death-Reported"
+  },
+  {
+   "cat": "nursery",
+   "date": "2026-11-19",
+   "hazard": "The bouncers can collapse while in use, posing a risk of impact injury to infants in the bouncer.",
+   "id": 11067,
+   "number": "27092",
+   "remedy": "Consumers should stop using the recalled infant bouncers immediately and contact Kidsview for an Amazon gift card. Consumers will be asked to check if their infant bouncer is recalled by…",
+   "remedy_type": [
+    "Refund"
+   ],
+   "sold_at": "Sold Online At: Amazon.com from August 2022 through November 2023 for between $60 and $170.",
+   "title": "Kidsview Recalls Infant Bouncers Due to Risk of Collapse and Impact Injury to Infants",
+   "units": "About 412",
+   "url": "https://cpsc.gov/Recalls/2027/Kidsview-Recalls-Infant-Bouncers-Due-to-Risk-of-Collapse-and-Impact-Injury-to-Infants"
+  },
+  {
    "cat": "decor-lighting",
    "date": "2026-11-12",
    "hazard": "The recalled rugs violate the mandatory standard for the flammability of carpets and rugs, posing a risk of serious injury or death from fire hazard.",
@@ -1323,36 +1353,6 @@
    "title": "Winston Porter and Seeday 3-Drawer, 4-Drawer, and 5-Drawer Dressers Recalled Due to Risk of Serious Injury or Death from Tip-Over and Entrapment Hazards; Violate Mandatory Standard for Clothing Storage Units",
    "units": "About 2,000 5-Drawer Dressers, 28 3-Drawer Dressers and 22…",
    "url": "https://www.cpsc.gov/Recalls/2026/Winston-Porter-and-Seeday-3-Drawer-4-Drawer-and-5-Drawer-Dressers-Recalled-Due-to-Risk-of-Serious-Injury-or-Death-from-Tip-Over-and-Entrapment-Hazards-Violate-Mandatory-Standard-for-Clothing-Storage-Units"
-  },
-  {
-   "cat": "tools",
-   "date": "2026-08-06",
-   "hazard": "The bolts on the attic stairway ladders can break while in use, posing a risk of serious injury or death from fall hazard.",
-   "id": 10897,
-   "number": "26661",
-   "remedy": "Consumers should stop using the recalled ladders immediately and register at Atticstairwayrecall.expertinquiry.com to receive a free repair kit. Consumers should have the ladder's model…",
-   "remedy_type": [
-    "Repair"
-   ],
-   "sold_at": "The Home Depot, Lowe's, Do It Best, Orgill, and other retailers nationwide and on-line at Amazon.com from November 2012…",
-   "title": "Louisville Ladder Recalls Over One Million Attic Stairway Ladders Due to Risk of Serious Injury or Death from Fall Hazard",
-   "units": "1,770,000 (In addition, about 13,054 were sold in Canada)",
-   "url": "https://www.cpsc.gov/Recalls/2026/Louisville-Ladder-Recalls-Over-One-Million-Attic-Stairway-Ladders-Due-to-Risk-of-Serious-Injury-or-Death-from-Fall-Hazard"
-  },
-  {
-   "cat": "outdoor",
-   "date": "2026-08-06",
-   "hazard": "The recalled mowers violate the mandatory safety standard for walk-behind power lawn mowers because the blades can operate without the blade control system engaged or continue to operate even after the release…",
-   "id": 10896,
-   "number": "26648",
-   "remedy": "Consumers should stop using the recalled mowers immediately unless they have already received a free repair kit in the mail from DR Power and it has been installed. If the repair kit has…",
-   "remedy_type": [
-    "Repair"
-   ],
-   "sold_at": "Independent power equipment stores nationwide and online at drpower.com from September 2024 through September 2025 for…",
-   "title": "DR Power Equipment Recalls Lawn Mowers Due to Risk of Serious Injury or Death from Laceration Hazard; Violate Mandatory Standard for Lawn Mowers",
-   "units": "About 320 (In addition, 9 were sold in Canada)",
-   "url": "https://www.cpsc.gov/Recalls/2026/DR-Power-Equipment-Recalls-Lawn-Mowers-Due-to-Risk-of-Serious-Injury-or-Death-from-Laceration-Hazard-Violate-Mandatory-Standard-for-Lawn-Mowers"
   }
  ],
  "source": "U.S. Consumer Product Safety Commission recall database (SaferProducts.gov API)",

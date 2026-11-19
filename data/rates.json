@@ -1224,6 +1224,10 @@
    [
     "2026-11-12",
     6.45
+   ],
+   [
+    "2026-11-19",
+    6.66
    ]
   ],
   "30": [
@@ -2450,26 +2454,30 @@
    [
     "2026-11-12",
     7.11
+   ],
+   [
+    "2026-11-19",
+    7.28
    ]
   ]
  },
  "source": "Freddie Mac Primary Mortgage Market Survey (weekly U.S. averages)",
  "summary": {
   "15": {
-   "date": "2026-11-12",
+   "date": "2026-11-19",
    "high_52w": 6.73,
    "low_52w": 5.35,
-   "rate": 6.45,
-   "week_change": -0.12,
-   "year_ago": 5.49
+   "rate": 6.66,
+   "week_change": 0.21,
+   "year_ago": 5.54
   },
   "30": {
-   "date": "2026-11-12",
+   "date": "2026-11-19",
    "high_52w": 7.4,
    "low_52w": 5.98,
-   "rate": 7.11,
-   "week_change": -0.07,
-   "year_ago": 6.24
+   "rate": 7.28,
+   "week_change": 0.17,
+   "year_ago": 6.26
   }
  },
  "via": "FRED"
