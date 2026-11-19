@@ -97,6 +97,8 @@ def clean(text: str | None, limit: int = 0) -> str:
             .replace("&#39;", "'").replace("&rsquo;", "'").replace("&lsquo;", "'")
             .replace("&ldquo;", '"').replace("&rdquo;", '"').replace("&ndash;", "-")
             .replace("&mdash;", "-").replace("&reg;", "").replace("&trade;", ""))
+    # the site never publishes email addresses, including ones quoted in public notices
+    text = re.sub(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+(?:\.[A-Za-z0-9-]+)+", "the address in the official notice", text)
     text = re.sub(r"\s+", " ", text).strip()
     if limit and len(text) > limit:
         cut = text[:limit].rsplit(" ", 1)[0].rstrip(",;:. ")

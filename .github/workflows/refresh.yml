@@ -1,8 +1,9 @@
 name: Refresh data and rebuild site
 
 # Keeps Home.Deals self-updating: pulls fresh public data four times a day,
-# rebuilds the static pages and commits only when something actually changed.
-# GitHub Pages (deploy from branch: main / root) then republishes on its own.
+# rebuilds the static pages, runs the pre-publish checks and commits only
+# when something actually changed. GitHub Pages (deploy from branch: main,
+# folder: / root) then republishes on its own.
 
 on:
   schedule:
@@ -13,6 +14,7 @@ on:
     paths:
       - "scripts/**"
       - "content/**"
+      - "assets/**"
       - ".github/workflows/refresh.yml"
 
 permissions:
@@ -32,17 +34,17 @@ jobs:
         with:
           ref: main
 
-      - name: Refresh data
-        run: python3 scripts/update_data.py
-
-      - name: Rebuild pages
-        run: |
-          if [ -f scripts/build.py ]; then python3 scripts/build.py; fi
-
-      - name: Commit and push if content changed
+      - name: Refresh data, rebuild, check and publish
         run: |
           git config user.name "home-deals-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          make_site() {
+            python3 scripts/update_data.py
+            python3 scripts/build.py
+            python3 scripts/check.py
+          }
+
           publish() {
             git add -A
             if git diff --cached --quiet -- . ':(exclude)data/_status.json'; then
@@ -52,11 +54,14 @@ jobs:
             git commit -q -m "chore(data): automatic refresh $(date -u +%Y-%m-%dT%H:%MZ)"
             git push origin HEAD:main
           }
+
+          # A failed check stops here, so a broken build is never published.
+          make_site
+
           if ! publish; then
-            echo "Push was rejected (main moved). Rebuilding on top of the latest main."
+            echo "Push was rejected because main moved. Rebuilding on top of the latest main."
             git fetch origin main
             git reset --hard origin/main
-            python3 scripts/update_data.py
-            if [ -f scripts/build.py ]; then python3 scripts/build.py; fi
+            make_site
             publish
           fi
