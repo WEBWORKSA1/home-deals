@@ -1,6 +1,14 @@
 {
  "items": [
   {
+   "channel": "The Home Depot",
+   "handle": "homedepot",
+   "id": "stJUpgLxmgg",
+   "published": "2026-11-20",
+   "title": "5 Modern Tools to Update your Toolbox | The Home Depot",
+   "topic": "projects"
+  },
+  {
    "channel": "Consumer Reports",
    "handle": "consumerreports",
    "id": "EZUtih_qXNM",
@@ -374,14 +382,6 @@
    "id": "_Nkgnbed_wA",
    "published": "2026-10-11",
    "title": "Shop Built from a Kit - Finishing Up with Trim, Gutters & Roll-Up Doors",
-   "topic": "projects"
-  },
-  {
-   "channel": "The Home Depot",
-   "handle": "homedepot",
-   "id": "cn1aOMiR-hA",
-   "published": "2026-10-05",
-   "title": "John’s Story - The Home Depot Foundation | The Home Depot",
    "topic": "projects"
   },
   {
