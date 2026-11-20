@@ -1,6 +1,22 @@
 {
  "items": [
   {
+   "channel": "Consumer Reports",
+   "handle": "consumerreports",
+   "id": "EZUtih_qXNM",
+   "published": "2026-11-20",
+   "title": "2026 LA Auto Show | Talking Cars with Consumer Reports #533",
+   "topic": "buying"
+  },
+  {
+   "channel": "This Old House",
+   "handle": "thisoldhouse",
+   "id": "PHHghhSiTaE",
+   "published": "2026-11-19",
+   "title": "ASK This Old House | Chicken Coop, Maple Syrup (S14 E16) FULL EPISODE",
+   "topic": "repairs"
+  },
+  {
    "channel": "Technology Connections",
    "handle": "TechnologyConnections",
    "id": "FcbwVXk83U8",
@@ -39,14 +55,6 @@
    "published": "2026-11-17",
    "title": "We DIY'd the Most INSANE HVAC System You've Ever Seen",
    "topic": "projects"
-  },
-  {
-   "channel": "This Old House",
-   "handle": "thisoldhouse",
-   "id": "Yq4aZC2OXv4",
-   "published": "2026-11-16",
-   "title": "Trees | Ask This Old House | Ask 25 Best of",
-   "topic": "repairs"
   },
   {
    "channel": "Matt Risinger",
