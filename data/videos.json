@@ -1,6 +1,22 @@
 {
  "items": [
   {
+   "channel": "This Old House",
+   "handle": "thisoldhouse",
+   "id": "4-FDNOj9o9s",
+   "published": "2026-11-20",
+   "title": "How to Expand a Kitchen | This Old House",
+   "topic": "repairs"
+  },
+  {
+   "channel": "Matt Risinger",
+   "handle": "buildshow",
+   "id": "9CHR-nt1huE",
+   "published": "2026-11-20",
+   "title": "What if you could make your builds 90% tighter in 90 minutes?",
+   "topic": "projects"
+  },
+  {
    "channel": "The Home Depot",
    "handle": "homedepot",
    "id": "stJUpgLxmgg",
@@ -47,14 +63,6 @@
    "published": "2026-11-18",
    "title": "The Ratchet Strap Trick You've Probably Never Seen",
    "topic": "projects"
-  },
-  {
-   "channel": "This Old House",
-   "handle": "thisoldhouse",
-   "id": "XdkPqtbaTXI",
-   "published": "2026-11-17",
-   "title": "This Old House | Winter Wrap Party (S29 E16) FULL EPISODE",
-   "topic": "repairs"
   },
   {
    "channel": "Stud Pack",
@@ -118,14 +126,6 @@
    "id": "RSlKzT9MIVg",
    "published": "2026-11-14",
    "title": "Framing | How to Build to the Build HD Standard | Ep. 3",
-   "topic": "projects"
-  },
-  {
-   "channel": "Matt Risinger",
-   "handle": "buildshow",
-   "id": "0aWaXs76C2w",
-   "published": "2026-11-14",
-   "title": "Framing | How to Build to the Build HD Standard | Ep. 3.1",
    "topic": "projects"
   },
   {
@@ -239,14 +239,6 @@
    "published": "2026-11-06",
    "title": "I Built the Ultimate Tote Storage System",
    "topic": "repairs"
-  },
-  {
-   "channel": "Consumer Reports",
-   "handle": "consumerreports",
-   "id": "axwwKoQT8bg",
-   "published": "2026-11-06",
-   "title": "2026 Toyota RAV4 Woodland Hybrid AWD Review | Consumer Reports",
-   "topic": "buying"
   },
   {
    "channel": "Technology Connections",
