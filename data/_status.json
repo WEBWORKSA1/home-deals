@@ -1,6 +1,6 @@
 {
  "failed": 0,
- "generated_at": "2026-11-21T13:35:20Z",
+ "generated_at": "2026-11-21T22:14:20Z",
  "ok": 7,
  "sources": {
   "alerts": {
@@ -30,11 +30,12 @@
    "skipped": {}
   },
   "pulse": {
-   "latest": "2026-10-01",
+   "kept_previous": true,
    "ok": true,
    "series": 12,
-   "skipped": {},
-   "via": "BLS public API"
+   "skipped": {
+    "bls": "HTTP Error 503: Service Unavailable"
+   }
   },
   "rates": {
    "latest": {
