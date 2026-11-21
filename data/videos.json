@@ -1,6 +1,30 @@
 {
  "items": [
   {
+   "channel": "LRN2DIY",
+   "handle": "LRN2DIY",
+   "id": "uZKPQVajSk4",
+   "published": "2026-11-21",
+   "title": "What's the BEST Way to Patch Up Drywall?",
+   "topic": "repairs"
+  },
+  {
+   "channel": "Essential Craftsman",
+   "handle": "essentialcraftsman",
+   "id": "23JEPDfapkE",
+   "published": "2026-11-21",
+   "title": "The Impact Drill Accessories You Never Knew You Needed",
+   "topic": "projects"
+  },
+  {
+   "channel": "Consumer Reports",
+   "handle": "consumerreports",
+   "id": "XVGq3A3o8yg",
+   "published": "2026-11-21",
+   "title": "2027 Hyundai Tucson at the LA Auto Show | Consumer Reports",
+   "topic": "buying"
+  },
+  {
    "channel": "This Old House",
    "handle": "thisoldhouse",
    "id": "4-FDNOj9o9s",
@@ -150,14 +174,6 @@
    "id": "2YfxrcUY4bE",
    "published": "2026-11-12",
    "title": "Thank you, veterans | The Home Depot Foundation",
-   "topic": "projects"
-  },
-  {
-   "channel": "Essential Craftsman",
-   "handle": "essentialcraftsman",
-   "id": "WGU-TDYvWvQ",
-   "published": "2026-11-11",
-   "title": "The Right Work Clothes for Most Jobs",
    "topic": "projects"
   },
   {
@@ -311,14 +327,6 @@
    "published": "2026-10-29",
    "title": "THEY WANTED $30,000 for This! So We Did It Ourselves",
    "topic": "projects"
-  },
-  {
-   "channel": "LRN2DIY",
-   "handle": "LRN2DIY",
-   "id": "KhEtNDaNNio",
-   "published": "2026-10-24",
-   "title": "Your Drill Has 10 Features. Most People Use 3.",
-   "topic": "repairs"
   },
   {
    "channel": "Vancouver Carpenter",
