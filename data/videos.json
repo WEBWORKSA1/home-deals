@@ -9,6 +9,22 @@
    "topic": "repairs"
   },
   {
+   "channel": "Fix This Build That",
+   "handle": "Fixthisbuildthat",
+   "id": "kMhiBxyVqg4",
+   "published": "2026-11-22",
+   "title": "Every Shed Needs This",
+   "topic": "projects"
+  },
+  {
+   "channel": "Consumer Reports",
+   "handle": "consumerreports",
+   "id": "pM8SzKaAV70",
+   "published": "2026-11-22",
+   "title": "2027 Hyundai Elantra at the LA Auto Show | Consumer Reports",
+   "topic": "buying"
+  },
+  {
    "channel": "This Old House",
    "handle": "thisoldhouse",
    "id": "SGmKuyn7FHk",
@@ -87,14 +103,6 @@
    "published": "2026-11-20",
    "title": "5 Modern Tools to Update your Toolbox | The Home Depot",
    "topic": "projects"
-  },
-  {
-   "channel": "Consumer Reports",
-   "handle": "consumerreports",
-   "id": "EZUtih_qXNM",
-   "published": "2026-11-20",
-   "title": "2026 LA Auto Show | Talking Cars with Consumer Reports #533",
-   "topic": "buying"
   },
   {
    "channel": "This Old House",
@@ -415,14 +423,6 @@
    "published": "2026-08-26",
    "title": "Don't Set Your Shed on Blocks Until You See This",
    "topic": "repairs"
-  },
-  {
-   "channel": "Fix This Build That",
-   "handle": "Fixthisbuildthat",
-   "id": "DzmPxDDiyFI",
-   "published": "2026-08-09",
-   "title": "Mtn Dew + Concrete, Not What I Expected",
-   "topic": "projects"
   },
   {
    "channel": "Bob Vila",
