@@ -1,6 +1,30 @@
 {
  "items": [
   {
+   "channel": "seejanedrill",
+   "handle": "seejanedrill",
+   "id": "v7kBYHbNC9E",
+   "published": "2026-11-22",
+   "title": "No Power. No Water. Would You Survive?",
+   "topic": "repairs"
+  },
+  {
+   "channel": "This Old House",
+   "handle": "thisoldhouse",
+   "id": "SGmKuyn7FHk",
+   "published": "2026-11-21",
+   "title": "How to Install a Pot Filler Faucet | Ask This Old House",
+   "topic": "repairs"
+  },
+  {
+   "channel": "Home RenoVision DIY",
+   "handle": "HomeRenoVisionDIY",
+   "id": "6-DuiX7hAgA",
+   "published": "2026-11-21",
+   "title": "I Tested All the Best (and Worst) Ways to Build a Shower",
+   "topic": "repairs"
+  },
+  {
    "channel": "LRN2DIY",
    "handle": "LRN2DIY",
    "id": "uZKPQVajSk4",
@@ -87,14 +111,6 @@
    "published": "2026-11-19",
    "title": "It's a Fiber Optic Christmas (or... was)",
    "topic": "energy"
-  },
-  {
-   "channel": "This Old House",
-   "handle": "thisoldhouse",
-   "id": "bAvnXQW-xdM",
-   "published": "2026-11-18",
-   "title": "Keeping Water Out of a Basement | This Old House",
-   "topic": "repairs"
   },
   {
    "channel": "Essential Craftsman",
@@ -359,22 +375,6 @@
    "published": "2026-10-18",
    "title": "Why Don't More People Use Smart Home Upgrades?",
    "topic": "projects"
-  },
-  {
-   "channel": "Home RenoVision DIY",
-   "handle": "HomeRenoVisionDIY",
-   "id": "aZgxZr4ETEo",
-   "published": "2026-10-17",
-   "title": "I Tested All the Best (and Worst) Drywall Anchors",
-   "topic": "repairs"
-  },
-  {
-   "channel": "seejanedrill",
-   "handle": "seejanedrill",
-   "id": "S3jRZWQ0-NY",
-   "published": "2026-10-17",
-   "title": "I Made This Cheap Mirror Look High-End",
-   "topic": "repairs"
   },
   {
    "channel": "April Wilkerson",
