@@ -9,12 +9,28 @@
    "topic": "repairs"
   },
   {
+   "channel": "Home Repair Tutor",
+   "handle": "HomeRepairTutor",
+   "id": "YdnkeCVJsPc",
+   "published": "2026-11-22",
+   "title": "Bathroom Drain Pipe Repair Tips (Save $500)",
+   "topic": "repairs"
+  },
+  {
    "channel": "Fix This Build That",
    "handle": "Fixthisbuildthat",
    "id": "kMhiBxyVqg4",
    "published": "2026-11-22",
-   "title": "Every Shed Needs This",
+   "title": "Why Don't More Sheds Have This?",
    "topic": "projects"
+  },
+  {
+   "channel": "Project Farm",
+   "handle": "ProjectFarm",
+   "id": "hAUHnuCxNfA",
+   "published": "2026-11-22",
+   "title": "These Are The Best 10 Products I've Ever Tested!",
+   "topic": "buying"
   },
   {
    "channel": "Consumer Reports",
@@ -311,14 +327,6 @@
    "published": "2026-11-01",
    "title": "Steel You Bolt Together? Cold-Formed Steel Explained",
    "topic": "projects"
-  },
-  {
-   "channel": "Project Farm",
-   "handle": "ProjectFarm",
-   "id": "DiJEdoez__Q",
-   "published": "2026-11-01",
-   "title": "Don't Wait For A Blackout! THIS Is The Generator I'd Buy!",
-   "topic": "buying"
   },
   {
    "channel": "Home RenoVision DIY",
