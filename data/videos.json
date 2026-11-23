@@ -1,6 +1,22 @@
 {
  "items": [
   {
+   "channel": "Matt Risinger",
+   "handle": "buildshow",
+   "id": "wwCGRWWyfdw",
+   "published": "2026-11-23",
+   "title": "Build Science® 501 | Episode 5: \"Slabless\" Slab (Version 2)",
+   "topic": "projects"
+  },
+  {
+   "channel": "This Old House",
+   "handle": "thisoldhouse",
+   "id": "jfjbLLoaJ5g",
+   "published": "2026-11-22",
+   "title": "Wooden Toy Truck | Build It | Ask This Old House",
+   "topic": "repairs"
+  },
+  {
    "channel": "seejanedrill",
    "handle": "seejanedrill",
    "id": "v7kBYHbNC9E",
@@ -121,14 +137,6 @@
    "topic": "projects"
   },
   {
-   "channel": "This Old House",
-   "handle": "thisoldhouse",
-   "id": "PHHghhSiTaE",
-   "published": "2026-11-19",
-   "title": "ASK This Old House | Chicken Coop, Maple Syrup (S14 E16) FULL EPISODE",
-   "topic": "repairs"
-  },
-  {
    "channel": "Technology Connections",
    "handle": "TechnologyConnections",
    "id": "FcbwVXk83U8",
@@ -198,14 +206,6 @@
    "id": "JZ5JmwZZSF4",
    "published": "2026-11-14",
    "title": "Why Work-Life Balance is a Myth",
-   "topic": "projects"
-  },
-  {
-   "channel": "Matt Risinger",
-   "handle": "buildshow",
-   "id": "RSlKzT9MIVg",
-   "published": "2026-11-14",
-   "title": "Framing | How to Build to the Build HD Standard | Ep. 3",
    "topic": "projects"
   },
   {
