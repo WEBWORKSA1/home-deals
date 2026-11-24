@@ -3,10 +3,34 @@
   {
    "channel": "Matt Risinger",
    "handle": "buildshow",
+   "id": "FzwPoe5bIpI",
+   "published": "2026-11-24",
+   "title": "Rebuilding Altadena: How We're Building Homes to SURVIVE Wildfires",
+   "topic": "projects"
+  },
+  {
+   "channel": "This Old House",
+   "handle": "thisoldhouse",
+   "id": "jXPrlTj3PD4",
+   "published": "2026-11-23",
+   "title": "Self-Leveling Concrete | This Old House",
+   "topic": "repairs"
+  },
+  {
+   "channel": "Matt Risinger",
+   "handle": "buildshow",
    "id": "wwCGRWWyfdw",
    "published": "2026-11-23",
    "title": "Build Science® 501 | Episode 5: \"Slabless\" Slab (Version 2)",
    "topic": "projects"
+  },
+  {
+   "channel": "Consumer Reports",
+   "handle": "consumerreports",
+   "id": "TRTkrO-gxBQ",
+   "published": "2026-11-23",
+   "title": "We Asked 90-Year-Olds to Judge Slip-On Shoes | Consumer Reports",
+   "topic": "buying"
   },
   {
    "channel": "This Old House",
@@ -105,22 +129,6 @@
    "topic": "buying"
   },
   {
-   "channel": "Consumer Reports",
-   "handle": "consumerreports",
-   "id": "XVGq3A3o8yg",
-   "published": "2026-11-21",
-   "title": "2027 Hyundai Tucson at the LA Auto Show | Consumer Reports",
-   "topic": "buying"
-  },
-  {
-   "channel": "This Old House",
-   "handle": "thisoldhouse",
-   "id": "4-FDNOj9o9s",
-   "published": "2026-11-20",
-   "title": "How to Expand a Kitchen | This Old House",
-   "topic": "repairs"
-  },
-  {
    "channel": "Matt Risinger",
    "handle": "buildshow",
    "id": "9CHR-nt1huE",
@@ -158,14 +166,6 @@
    "id": "PBwEfk2pPjg",
    "published": "2026-11-17",
    "title": "We DIY'd the Most INSANE HVAC System You've Ever Seen",
-   "topic": "projects"
-  },
-  {
-   "channel": "Matt Risinger",
-   "handle": "buildshow",
-   "id": "xRnQIFD6mqA",
-   "published": "2026-11-16",
-   "title": "Build Science® 501 | Episode 4: Roof Overframe",
    "topic": "projects"
   },
   {
