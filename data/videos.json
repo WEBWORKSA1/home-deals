@@ -1,6 +1,30 @@
 {
  "items": [
   {
+   "channel": "This Old House",
+   "handle": "thisoldhouse",
+   "id": "2EF1-BIiNBg",
+   "published": "2026-11-24",
+   "title": "This Old House | Return to New Orleans, Post Katrina (S29 E17) FULL EPISODE",
+   "topic": "repairs"
+  },
+  {
+   "channel": "This Old House",
+   "handle": "thisoldhouse",
+   "id": "QvA8glKDs04",
+   "published": "2026-11-24",
+   "title": "ASK This Old House | Fan, Fireplace, Roofing (S14 E17) FULL EPISODE",
+   "topic": "repairs"
+  },
+  {
+   "channel": "seejanedrill",
+   "handle": "seejanedrill",
+   "id": "ZlJsvwVR-24",
+   "published": "2026-11-24",
+   "title": "No Power. No Water. Would You Survive? Pt. 2",
+   "topic": "repairs"
+  },
+  {
    "channel": "Matt Risinger",
    "handle": "buildshow",
    "id": "FzwPoe5bIpI",
@@ -31,14 +55,6 @@
    "published": "2026-11-23",
    "title": "We Asked 90-Year-Olds to Judge Slip-On Shoes | Consumer Reports",
    "topic": "buying"
-  },
-  {
-   "channel": "This Old House",
-   "handle": "thisoldhouse",
-   "id": "jfjbLLoaJ5g",
-   "published": "2026-11-22",
-   "title": "Wooden Toy Truck | Build It | Ask This Old House",
-   "topic": "repairs"
   },
   {
    "channel": "seejanedrill",
@@ -79,14 +95,6 @@
    "published": "2026-11-22",
    "title": "2027 Hyundai Elantra at the LA Auto Show | Consumer Reports",
    "topic": "buying"
-  },
-  {
-   "channel": "This Old House",
-   "handle": "thisoldhouse",
-   "id": "SGmKuyn7FHk",
-   "published": "2026-11-21",
-   "title": "How to Install a Pot Filler Faucet | Ask This Old House",
-   "topic": "repairs"
   },
   {
    "channel": "Home RenoVision DIY",
@@ -303,14 +311,6 @@
    "published": "2026-11-03",
    "title": "Why does a loose gas cap turn on the check engine light?",
    "topic": "energy"
-  },
-  {
-   "channel": "seejanedrill",
-   "handle": "seejanedrill",
-   "id": "fY1SfBn3faQ",
-   "published": "2026-11-01",
-   "title": "I Made a Coat Rack That’s Almost Too Pretty to Use",
-   "topic": "repairs"
   },
   {
    "channel": "April Wilkerson",
