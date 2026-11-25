@@ -217,14 +217,10 @@
    "yoy": -4.1
   },
   "months_supply": {
-   "date": "2026-09-01",
+   "date": "2026-10-01",
    "id": "MSACSR",
    "label": "Monthly supply of new houses (Census Bureau / HUD)",
    "spark": [
-    [
-     "2024-09",
-     7.9
-    ],
     [
      "2024-10",
      9.1
@@ -311,7 +307,7 @@
     ],
     [
      "2026-07",
-     8.9
+     9.0
     ],
     [
      "2026-08",
@@ -319,22 +315,22 @@
     ],
     [
      "2026-09",
-     8.4
+     9.3
+    ],
+    [
+     "2026-10",
+     8.0
     ]
    ],
-   "value": 8.4,
-   "year_ago": 8.2,
-   "yoy": 2.44
+   "value": 8.0,
+   "year_ago": 9.0,
+   "yoy": -11.11
   },
   "new_home_sales": {
-   "date": "2026-09-01",
+   "date": "2026-10-01",
    "id": "HSN1F",
    "label": "New one-family houses sold, annual rate, thousands (Census Bureau / HUD)",
    "spark": [
-    [
-     "2024-09",
-     715.0
-    ],
     [
      "2024-10",
      632.0
@@ -421,7 +417,7 @@
     ],
     [
      "2026-07",
-     647.0
+     644.0
     ],
     [
      "2026-08",
@@ -429,12 +425,16 @@
     ],
     [
      "2026-09",
-     676.0
+     614.0
+    ],
+    [
+     "2026-10",
+     701.0
     ]
    ],
-   "value": 676.0,
-   "year_ago": 714.0,
-   "yoy": -5.32
+   "value": 701.0,
+   "year_ago": 652.0,
+   "yoy": 7.52
   }
  },
  "source": "U.S. Census Bureau, HUD and FHFA series retrieved from FRED"

@@ -1,6 +1,6 @@
 {
  "failed": 0,
- "generated_at": "2026-11-25T01:28:39Z",
+ "generated_at": "2026-11-25T15:48:20Z",
  "ok": 7,
  "sources": {
   "alerts": {
@@ -8,7 +8,7 @@
     "https://consumer.ftc.gov/blog/gd-rss.xml": 10,
     "https://www.ftc.gov/feeds/press-release-consumer-protection.xml": 30
    },
-   "items": 10,
+   "items": 9,
    "ok": true
   },
   "energy": {

@@ -1,6 +1,14 @@
 {
  "items": [
   {
+   "channel": "Essential Craftsman",
+   "handle": "essentialcraftsman",
+   "id": "BhQMHJemV5k",
+   "published": "2026-11-25",
+   "title": "I Don't Like Plumbing. But This Was Worth It.",
+   "topic": "projects"
+  },
+  {
    "channel": "This Old House",
    "handle": "thisoldhouse",
    "id": "2EF1-BIiNBg",
@@ -47,6 +55,14 @@
    "published": "2026-11-23",
    "title": "Build Science® 501 | Episode 5: \"Slabless\" Slab (Version 2)",
    "topic": "projects"
+  },
+  {
+   "channel": "Consumer Reports",
+   "handle": "consumerreports",
+   "id": "gG33mYvZ-P4",
+   "published": "2026-11-23",
+   "title": "Are EVs Becoming Too Fast? We Drive the 1200+ HP Lucid Air Sapphire | Talking Cars #534",
+   "topic": "buying"
   },
   {
    "channel": "Consumer Reports",
@@ -129,14 +145,6 @@
    "topic": "projects"
   },
   {
-   "channel": "Consumer Reports",
-   "handle": "consumerreports",
-   "id": "GyAtl1xAK28",
-   "published": "2026-11-21",
-   "title": "2028 Toyota Highlander EV at the LA Auto Show",
-   "topic": "buying"
-  },
-  {
    "channel": "Matt Risinger",
    "handle": "buildshow",
    "id": "9CHR-nt1huE",
@@ -207,14 +215,6 @@
    "published": "2026-11-14",
    "title": "I Hired a Kid to Put Up My Lights",
    "topic": "repairs"
-  },
-  {
-   "channel": "Essential Craftsman",
-   "handle": "essentialcraftsman",
-   "id": "JZ5JmwZZSF4",
-   "published": "2026-11-14",
-   "title": "Why Work-Life Balance is a Myth",
-   "topic": "projects"
   },
   {
    "channel": "Lowe's Home Improvement",
