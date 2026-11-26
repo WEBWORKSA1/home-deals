@@ -1,6 +1,6 @@
 {
  "failed": 0,
- "generated_at": "2026-11-25T15:48:20Z",
+ "generated_at": "2026-11-26T01:02:30Z",
  "ok": 7,
  "sources": {
   "alerts": {
@@ -8,7 +8,7 @@
     "https://consumer.ftc.gov/blog/gd-rss.xml": 10,
     "https://www.ftc.gov/feeds/press-release-consumer-protection.xml": 30
    },
-   "items": 9,
+   "items": 10,
    "ok": true
   },
   "energy": {
@@ -38,22 +38,22 @@
   },
   "rates": {
    "latest": {
-    "date": "2026-11-19",
+    "date": "2026-11-25",
     "high_52w": 7.4,
     "low_52w": 5.98,
-    "rate": 7.28,
-    "week_change": 0.17,
-    "year_ago": 6.26
+    "rate": 7.21,
+    "week_change": -0.07,
+    "year_ago": 6.23
    },
    "ok": true,
    "via": "FRED"
   },
   "recalls": {
-   "home_related": 246,
+   "home_related": 244,
    "kept": 90,
    "newest": "2026-11-19",
    "ok": true,
-   "total_in_window": 492
+   "total_in_window": 480
   },
   "videos": {
    "channels": 21,

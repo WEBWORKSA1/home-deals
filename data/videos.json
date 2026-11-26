@@ -1,12 +1,44 @@
 {
  "items": [
   {
+   "channel": "Matt Risinger",
+   "handle": "buildshow",
+   "id": "MGzJ_nttQGQ",
+   "published": "2026-11-26",
+   "title": "Integrated System Solutions with Mapei",
+   "topic": "projects"
+  },
+  {
+   "channel": "This Old House",
+   "handle": "thisoldhouse",
+   "id": "aC97WS8_f2k",
+   "published": "2026-11-25",
+   "title": "Apprentice to Carpenter | This Old House",
+   "topic": "repairs"
+  },
+  {
+   "channel": "Stud Pack",
+   "handle": "StudPack",
+   "id": "cfv-6WPo7yM",
+   "published": "2026-11-25",
+   "title": "The Tools Everyone Should Keep In Their Truck | The Ultimate 2026 Tool Gift Guide!",
+   "topic": "projects"
+  },
+  {
    "channel": "Essential Craftsman",
    "handle": "essentialcraftsman",
    "id": "BhQMHJemV5k",
    "published": "2026-11-25",
    "title": "I Don't Like Plumbing. But This Was Worth It.",
    "topic": "projects"
+  },
+  {
+   "channel": "Consumer Reports",
+   "handle": "consumerreports",
+   "id": "gG33mYvZ-P4",
+   "published": "2026-11-25",
+   "title": "Are EVs Becoming Too Fast? We Drive the 1200+ HP Lucid Air Sapphire | Talking Cars #534",
+   "topic": "buying"
   },
   {
    "channel": "This Old House",
@@ -41,28 +73,12 @@
    "topic": "projects"
   },
   {
-   "channel": "This Old House",
-   "handle": "thisoldhouse",
-   "id": "jXPrlTj3PD4",
-   "published": "2026-11-23",
-   "title": "Self-Leveling Concrete | This Old House",
-   "topic": "repairs"
-  },
-  {
    "channel": "Matt Risinger",
    "handle": "buildshow",
    "id": "wwCGRWWyfdw",
    "published": "2026-11-23",
    "title": "Build Science® 501 | Episode 5: \"Slabless\" Slab (Version 2)",
    "topic": "projects"
-  },
-  {
-   "channel": "Consumer Reports",
-   "handle": "consumerreports",
-   "id": "gG33mYvZ-P4",
-   "published": "2026-11-23",
-   "title": "Are EVs Becoming Too Fast? We Drive the 1200+ HP Lucid Air Sapphire | Talking Cars #534",
-   "topic": "buying"
   },
   {
    "channel": "Consumer Reports",
@@ -142,14 +158,6 @@
    "id": "qFM2KwsRpnI",
    "published": "2026-11-21",
    "title": "How to Install a Drop-In Kitchen Sink | How To Anything",
-   "topic": "projects"
-  },
-  {
-   "channel": "Matt Risinger",
-   "handle": "buildshow",
-   "id": "9CHR-nt1huE",
-   "published": "2026-11-20",
-   "title": "Builders - Reduce leakage by 90% with this one step",
    "topic": "projects"
   },
   {
@@ -351,14 +359,6 @@
    "published": "2026-10-30",
    "title": "Alkaline batteries are obsolete — but not for the reason you'd think",
    "topic": "energy"
-  },
-  {
-   "channel": "Stud Pack",
-   "handle": "StudPack",
-   "id": "8H0zUmBvB_o",
-   "published": "2026-10-29",
-   "title": "THEY WANTED $30,000 for This! So We Did It Ourselves",
-   "topic": "projects"
   },
   {
    "channel": "Vancouver Carpenter",
