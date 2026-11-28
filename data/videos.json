@@ -1,11 +1,35 @@
 {
  "items": [
   {
+   "channel": "This Old House",
+   "handle": "thisoldhouse",
+   "id": "bwo9UzITi9E",
+   "published": "2026-11-27",
+   "title": "How to Cut a New Window Opening | This Old House",
+   "topic": "repairs"
+  },
+  {
+   "channel": "LRN2DIY",
+   "handle": "LRN2DIY",
+   "id": "OJk82H8XNC4",
+   "published": "2026-11-27",
+   "title": "Use This To Keep your Family Warm During Power Outages",
+   "topic": "repairs"
+  },
+  {
    "channel": "Essential Craftsman",
    "handle": "essentialcraftsman",
    "id": "8JL1nu2a_EQ",
    "published": "2026-11-27",
-   "title": "Christmas Gifts You Probably Won't Throw Away",
+   "title": "Christmas Gifts That Are Actually Useful",
+   "topic": "projects"
+  },
+  {
+   "channel": "Matt Risinger",
+   "handle": "buildshow",
+   "id": "teuKQXS7ktM",
+   "published": "2026-11-27",
+   "title": "European Building Technology That Could Transform American Homes",
    "topic": "projects"
   },
   {
@@ -29,7 +53,7 @@
    "handle": "buildshow",
    "id": "MGzJ_nttQGQ",
    "published": "2026-11-26",
-   "title": "Integrated System Solutions with Mapei",
+   "title": "The secret to better bathrooms? A systems approach!",
    "topic": "projects"
   },
   {
@@ -73,28 +97,12 @@
    "topic": "repairs"
   },
   {
-   "channel": "This Old House",
-   "handle": "thisoldhouse",
-   "id": "QvA8glKDs04",
-   "published": "2026-11-24",
-   "title": "ASK This Old House | Fan, Fireplace, Roofing (S14 E17) FULL EPISODE",
-   "topic": "repairs"
-  },
-  {
    "channel": "seejanedrill",
    "handle": "seejanedrill",
    "id": "ZlJsvwVR-24",
    "published": "2026-11-24",
    "title": "No Power. No Water. Would You Survive? Pt. 2",
    "topic": "repairs"
-  },
-  {
-   "channel": "Matt Risinger",
-   "handle": "buildshow",
-   "id": "FzwPoe5bIpI",
-   "published": "2026-11-24",
-   "title": "Rebuilding Altadena: How We're Building Homes to SURVIVE Wildfires",
-   "topic": "projects"
   },
   {
    "channel": "Consumer Reports",
@@ -342,14 +350,6 @@
    "id": "qOTqrWFKrF0",
    "published": "2026-10-31",
    "title": "Complete Mini-House Build TIME LAPSE! (In Under 11 Minutes...)",
-   "topic": "repairs"
-  },
-  {
-   "channel": "LRN2DIY",
-   "handle": "LRN2DIY",
-   "id": "Uh5alwn49R4",
-   "published": "2026-10-31",
-   "title": "The Problem With Sharkbite",
    "topic": "repairs"
   },
   {
